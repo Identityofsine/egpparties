@@ -13,13 +13,29 @@ nav {
 	a {
 		font-size: 0.2933rem;
 		line-height: 100%;
+		color: #000000;
 	}
 
 	.content {
 		height: 100%;
+
+		.logo-gap {
+			gap: 0.1333rem;
+			position: relative;
+
+			.line {
+				width: 0.0267rem;
+				height: 0.6800rem;
+				background-color: #000000;
+				border-radius: 10px;
+			}
+		}
+
+		.nav-gap {
+			gap: 0.8800rem;
+		}
+
 	}
 
-	.nav-gap {
-		gap: 0.8800rem;
-	}
+
 }

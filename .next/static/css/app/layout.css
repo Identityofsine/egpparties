@@ -494,6 +494,7 @@ h4 {
 p {
   font-size: 0.3067rem;
   line-height: 197%;
+  color: rgba(16, 16, 16, 0.9254901961);
 }
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[13].use[5]!./src/styles/navbar.scss ***!
@@ -512,10 +513,21 @@ nav p.elem,
 nav a {
   font-size: 0.2933rem;
   line-height: 100%;
+  color: #000000;
 }
 nav .content {
   height: 100%;
 }
-nav .nav-gap {
+nav .content .logo-gap {
+  gap: 0.1333rem;
+  position: relative;
+}
+nav .content .logo-gap .line {
+  width: 0.0267rem;
+  height: 0.68rem;
+  background-color: #000000;
+  border-radius: 10px;
+}
+nav .content .nav-gap {
   gap: 0.88rem;
 }
