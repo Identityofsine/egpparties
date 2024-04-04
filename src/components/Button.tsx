@@ -1,3 +1,5 @@
+import '../styles/button.scss'
+
 type ButtonProps = {
 	text: string;
 	icon_type?: 'phone' | 'default' | 'email';

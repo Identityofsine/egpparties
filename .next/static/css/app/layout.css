@@ -504,11 +504,6 @@ nav {
   width: 100%;
   height: 1.4667rem;
 }
-nav p {
-  font-size: 0.4267rem;
-  line-height: 100%;
-  font-weight: 600;
-}
 nav p.elem,
 nav a {
   font-size: 0.2933rem;
@@ -518,16 +513,45 @@ nav a {
 nav .content {
   height: 100%;
 }
-nav .content .logo-gap {
+nav .content .nav-gap {
+  gap: 0.88rem;
+}
+
+.logo {
   gap: 0.1333rem;
   position: relative;
 }
-nav .content .logo-gap .line {
+.logo p {
+  font-size: 0.4267rem;
+  line-height: 100%;
+  font-weight: 600;
+}
+.logo .line {
   width: 0.0267rem;
   height: 0.68rem;
   background-color: #000000;
   border-radius: 10px;
 }
-nav .content .nav-gap {
-  gap: 0.88rem;
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[13].use[5]!./src/styles/footer.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+footer {
+  margin-top: auto;
+  height: 6.2667rem;
+  padding-top: 0.7733rem;
+  padding-bottom: 0.5067rem;
+}
+footer .content {
+  width: var(--margin-width);
+  height: 4.9867rem;
+}
+footer .content .info {
+  height: 100%;
+}
+footer .content .info .top .description {
+  margin-top: 0.1rem;
+  width: 6.8rem;
+}
+footer .content .info span {
+  font-size: 0.1867rem;
 }

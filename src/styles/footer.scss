@@ -1,0 +1,27 @@
+footer {
+	margin-top: auto;
+	height: 6.2667rem;
+	padding-top: 0.7733rem;
+	padding-bottom: 0.5067rem;
+
+	.content {
+		width: var(--margin-width);
+		height: 4.9867rem;
+
+		.info {
+			height: 100%;
+
+			.top {
+
+				.description {
+					margin-top: 0.1rem;
+					width: 6.8rem;
+				}
+			}
+
+			span {
+				font-size: 0.1867rem;
+			}
+		}
+	}
+}
