@@ -1,0 +1,25 @@
+nav {
+	max-width: var(--max-width);
+	width: 100%;
+	height: 1.4667rem;
+
+	p {
+		font-size: 0.4267rem;
+		line-height: 100%;
+		font-weight: 600;
+	}
+
+	p.elem,
+	a {
+		font-size: 0.2933rem;
+		line-height: 100%;
+	}
+
+	.content {
+		height: 100%;
+	}
+
+	.nav-gap {
+		gap: 0.8800rem;
+	}
+}

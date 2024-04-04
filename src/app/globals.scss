@@ -1,3 +1,5 @@
+@import './styles.scss';
+
 :root {
 	--max-width: 1920px;
 	--margin-width: calc(var(--max-width) - 134px);
@@ -27,6 +29,11 @@ h4,
 h5,
 p {
 	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
 }
 
 h1 {
