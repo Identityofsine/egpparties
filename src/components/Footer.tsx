@@ -42,7 +42,7 @@ export function Footer() {
 						<span>Copyright © 2024 By {brandSettings.llc}</span>
 					</div>
 				</div>
-				<div className="right flex column">
+				<div className="right flex column justify-between">
 					<div className="links flex justify-between">
 						<List title="Company" items={companyItems} />
 						<List title="Services" items={servicesItems} />

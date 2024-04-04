@@ -535,52 +535,6 @@ nav .content .nav-gap {
   border-radius: 10px;
 }
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[13].use[5]!./src/styles/footer.scss ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-footer {
-  margin-top: auto;
-  height: 6.2667rem;
-  padding-top: 0.7733rem;
-  padding-bottom: 0.5067rem;
-}
-footer .content {
-  width: var(--margin-width);
-  height: 4.9867rem;
-}
-footer .content .info {
-  height: 100%;
-}
-footer .content .info .top .description {
-  margin-top: 0.1rem;
-  width: 6.8rem;
-}
-footer .content .info span {
-  font-size: 0.1867rem;
-}
-footer .content .right {
-  width: 6.2933rem;
-  gap: 0.2533rem;
-}
-footer .content .right .button-gap {
-  gap: 0.1067rem;
-}
-
-.list p {
-  line-height: 1.1;
-}
-.list p.title {
-  font-size: 0.3867rem;
-  font-weight: 600;
-}
-.list .list-items {
-  margin-top: 0.24rem;
-}
-.list .list-items p {
-  font-weight: 400;
-  font-size: 0.2133rem;
-  margin-bottom: 0.1733rem;
-}
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[13].use[5]!./src/styles/button.scss ***!
   \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .button {
@@ -619,4 +573,49 @@ footer .content .right .button-gap {
   width: 0.3067rem;
   height: auto;
   object-fit: fill;
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[13].use[5]!./src/styles/footer.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+footer {
+  margin-top: auto;
+  height: 6.2667rem;
+  padding-top: 0.7733rem;
+  padding-bottom: 0.5067rem;
+}
+footer .content {
+  width: var(--margin-width);
+  height: 4.9867rem;
+}
+footer .content .info {
+  height: 100%;
+}
+footer .content .info .top .description {
+  margin-top: 0.1rem;
+  width: 6.8rem;
+}
+footer .content .info span {
+  font-size: 0.1867rem;
+}
+footer .content .right {
+  width: 6.2933rem;
+}
+footer .content .right .button-gap {
+  gap: 0.1067rem;
+}
+
+.list p {
+  line-height: 1.1;
+}
+.list p.title {
+  font-size: 0.3867rem;
+  font-weight: 600;
+}
+.list .list-items {
+  margin-top: 0.24rem;
+}
+.list .list-items p {
+  font-weight: 400;
+  font-size: 0.2133rem;
+  margin-bottom: 0.1733rem;
 }
