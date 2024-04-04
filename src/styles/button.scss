@@ -1,0 +1,41 @@
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	min-height: 0.8667rem;
+	padding: .105rem 0;
+	padding-left: 0.5333rem;
+	padding-right: 0.5867rem;
+	border: 1.06px solid #000000;
+	border-radius: 51.75px;
+	gap: 1rem;
+	cursor: pointer;
+
+
+	&.primary {
+		background: var(--button-primary);
+		border: none;
+
+		p {
+			color: white;
+			font-weight: 500;
+		}
+
+		img {
+			filter: invert(83%) sepia(99%) saturate(2%) hue-rotate(43deg) brightness(108%) contrast(100%);
+		}
+	}
+
+	p {
+		line-height: 1.1;
+		transform: translateY(0.0092rem);
+		user-select: none;
+	}
+
+	img {
+		width: 0.3067rem;
+		height: auto;
+		object-fit: fill;
+	}
+}

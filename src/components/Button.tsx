@@ -10,10 +10,10 @@ type ButtonProps = {
 function Button({ text, primary = true, icon_type = "default", onClick = () => { } }: ButtonProps) {
 
 	return (
-		<button className={`button ${primary ? 'primary' : ''}`} >
+		<div className={`button ${primary ? 'primary' : ''}`} >
+			<p>{text}</p>
 			<img src={`/icons/${icon_type}.svg`} alt={icon_type} />
-			{text}
-		</button>
+		</div>
 	)
 
 }

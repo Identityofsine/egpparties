@@ -4,6 +4,7 @@ footer {
 	padding-top: 0.7733rem;
 	padding-bottom: 0.5067rem;
 
+
 	.content {
 		width: var(--margin-width);
 		height: 4.9867rem;
@@ -12,7 +13,6 @@ footer {
 			height: 100%;
 
 			.top {
-
 				.description {
 					margin-top: 0.1rem;
 					width: 6.8rem;
@@ -22,6 +22,37 @@ footer {
 			span {
 				font-size: 0.1867rem;
 			}
+		}
+
+		.right {
+			width: 6.2933rem;
+			gap: 0.2533rem;
+
+			.button-gap {
+				gap: 0.1067rem;
+			}
+		}
+	}
+}
+
+.list {
+
+	p {
+		line-height: 1.1;
+	}
+
+	p.title {
+		font-size: 0.3867rem;
+		font-weight: 600;
+	}
+
+	.list-items {
+		margin-top: 0.24rem;
+
+		p {
+			font-weight: 400;
+			font-size: 0.2133rem;
+			margin-bottom: 0.1733rem;
 		}
 	}
 }
