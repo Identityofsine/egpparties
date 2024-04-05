@@ -87,9 +87,17 @@ export default function LandingPage() {
 			<section className="fill-width margin-width events">
 				<div className="flex column align-center">
 					<h2 className="fill-width" style={{ fontWeight: '500' }}>What We Do</h2>
-					<div className="events-grid">
+					<div className="events-grid margin-top-02">
+						<GradientCard className="event event-1" imgSrc="/images/c-1.png" title="Weddings" />
+						<GradientCard className="event event-2" imgSrc="/images/c-1.png" title="Parties" />
+						<GradientCard className="event event-3" imgSrc="/images/c-1.png" title="Events" />
+						<GradientCard className="event event-4" imgSrc="/images/c-1.png" title="Sweet 16s" />
+						<div className="flex column fill-height event-flex">
+							<GradientCard className="event event-5" imgSrc="/images/c-1.png" title="Family" />
+							<GradientCard className="event event-6" imgSrc="/images/c-1.png" title="Personal" />
+						</div>
 					</div>
-					<div className="flex column fill-width gap-01">
+					<div className="flex column fill-width gap-01 margin-top-03">
 						<Button className="" text="Contact Us" primary={true} />
 						<Button className="" text="Learn More About Our Photography Methods" primary={false} />
 						<Button className="" text="Learn More About Our Videography Methods" primary={false} />
