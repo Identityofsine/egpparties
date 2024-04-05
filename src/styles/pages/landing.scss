@@ -16,7 +16,8 @@ main.landing {
 
 		.card-container,
 		.expert {
-			width: 7.3467rem;
+			max-width: 7.3467rem;
+			min-width: 5rem;
 		}
 
 		.expert {
@@ -27,9 +28,9 @@ main.landing {
 			max-width: var(--margin-width);
 			width: 100%;
 			margin-top: 0.60rem;
-			display: flex;
-			justify-content: space-between;
-			flex-wrap: wrap;
+			display: grid;
+			gap: .1rem;
+			grid-template-columns: repeat(3, minmax(0, 1fr));
 
 		}
 	}
