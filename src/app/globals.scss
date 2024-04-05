@@ -11,6 +11,16 @@
 			rgba(0, 0, 0, 0) 34.48%,
 			rgba(0, 0, 0, 0) 60.77%,
 			rgba(0, 0, 0, 0.81) 85.54%);
+	--card-linear-gradient-2: linear-gradient(180deg,
+			rgba(0, 0, 0, 0.23) 15.06%,
+			rgba(0, 0, 0, 0) 34.48%,
+			rgba(0, 0, 0, 0) 75.77%,
+			rgba(0, 0, 0, 0.81) 85.54%);
+	--card-linear-gradient-3: linear-gradient(180deg,
+			rgba(0, 0, 0, 0.23) 15.06%,
+			rgba(0, 0, 0, 0) 34.48%,
+			rgba(0, 0, 0, 0) 52.77%,
+			rgba(0, 0, 0, 0.81) 85.54%);
 	--font-mono: "Inter", monospace;
 	--button-primary: #191716;
 	--white-filter: invert(83%) sepia(99%) saturate(2%) hue-rotate(43deg) brightness(108%) contrast(100%);

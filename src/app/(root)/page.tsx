@@ -88,13 +88,13 @@ export default function LandingPage() {
 				<div className="flex column align-center">
 					<h2 className="fill-width" style={{ fontWeight: '500' }}>What We Do</h2>
 					<div className="events-grid margin-top-02">
-						<GradientCard className="event event-1" imgSrc="/images/c-1.png" title="Weddings" />
-						<GradientCard className="event event-2" imgSrc="/images/c-1.png" title="Parties" />
-						<GradientCard className="event event-3" imgSrc="/images/c-1.png" title="Events" />
-						<GradientCard className="event event-4" imgSrc="/images/c-1.png" title="Sweet 16s" />
+						<GradientCard className="event event-1" imgSrc="/images/wwd-1.png" title="Weddings" />
+						<GradientCard className="event event-2" imgSrc="/images/wwd-2.png" title="Parties" />
+						<GradientCard className="event event-3" imgSrc="/images/wwd-4.png" title="Sweet 16s" />
+						<GradientCard className="event event-4 4" imgSrc="/images/wwd-3.png" title="Events" />
 						<div className="flex column fill-height event-flex">
-							<GradientCard className="event event-5" imgSrc="/images/c-1.png" title="Family" />
-							<GradientCard className="event event-6" imgSrc="/images/c-1.png" title="Personal" />
+							<GradientCard className="event event-5 c3" imgSrc="/images/wwd-5.png" title="Family" />
+							<GradientCard className="event event-6 c3" imgSrc="/images/wwd-6.png" title="Personal" />
 						</div>
 					</div>
 					<div className="flex column fill-width gap-01 margin-top-03">

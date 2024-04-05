@@ -24,6 +24,22 @@
 		height: 4.9200rem;
 	}
 
+	&.c1 {
+		background: var(--card-linear-gradient-1);
+	}
+
+	&.c2 {
+		background: var(--card-linear-gradient-2);
+	}
+
+	&.c3 {
+		background: var(--card-linear-gradient-3);
+	}
+
+	&.c4 {
+		background: var(--card-linear-gradient-4);
+	}
+
 	img {
 		position: absolute;
 		width: 100%;
