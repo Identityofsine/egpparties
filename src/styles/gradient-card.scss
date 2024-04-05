@@ -4,6 +4,26 @@
 	background: var(--card-linear-gradient-1);
 	overflow: hidden;
 
+	&.full {
+		width: 8.8000rem;
+		height: 10.0933rem;
+	}
+
+	&.full-2 {
+		width: 11.0800rem;
+		height: 10.0933rem;
+	}
+
+	&.half-horizontal {
+		width: 11.1733rem;
+		height: 4.9200rem;
+	}
+
+	&.quarter {
+		width: 5.4533rem;
+		height: 4.9200rem;
+	}
+
 	img {
 		position: absolute;
 		width: 100%;
