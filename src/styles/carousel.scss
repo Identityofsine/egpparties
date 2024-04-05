@@ -1,0 +1,28 @@
+.carousel-item {
+	width: 8.2133rem;
+	height: 4.8000rem;
+	aspect-ratio: 1.7111;
+
+	img {
+		height: 100%;
+		width: 100%;
+		border-radius: var(--card-border-radius);
+	}
+}
+
+.carousel {
+	width: 100%;
+
+	&-container {
+		width: 100%;
+		display: flex;
+		gap: 0.2133rem;
+		height: fit-content;
+		overflow: hidden;
+	}
+
+	&-item {
+		flex: 0 0 auto;
+		scroll-snap-align: start;
+	}
+}

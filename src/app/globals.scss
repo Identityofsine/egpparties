@@ -5,10 +5,10 @@
 	--margin-width: calc(var(--max-width) - 134px);
 	--border-radius: 12px;
 	--card-border-radius: 20px;
-	--card-linear-gradient: background: linear-gradient(110deg,
+	--card-linear-gradient-1: linear-gradient(180deg,
 			rgba(0, 0, 0, 0.23) 15.06%,
 			rgba(0, 0, 0, 0) 34.48%,
-			rgba(0, 0, 0, 0) 69.77%,
+			rgba(0, 0, 0, 0) 60.77%,
 			rgba(0, 0, 0, 0.81) 85.54%);
 	--font-mono: "Inter", monospace;
 	--button-primary: #191716;
@@ -49,6 +49,7 @@ a {
 	color: inherit;
 }
 
+//title-3
 h1 {
 	font-size: 2.0667rem;
 	font-weight: 300;
@@ -68,8 +69,15 @@ h4 {
 	font-weight: 300;
 }
 
+//card-font-1
+h5 {
+	font-size: 0.8533rem;
+	font-weight: 500;
+	color: white;
+}
+
 p {
 	font-size: 0.3067rem;
 	line-height: 197%;
-	color: #101010EC;
+	color: rgba(16, 16, 16, 0.8);
 }

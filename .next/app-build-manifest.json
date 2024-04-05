@@ -9,8 +9,8 @@
     "/(root)/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(root)/page.js",
-      "static/css/app/(root)/page.css"
+      "static/css/app/(root)/page.css",
+      "static/chunks/app/(root)/page.js"
     ]
   }
 }

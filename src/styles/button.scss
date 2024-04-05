@@ -6,10 +6,10 @@
 	min-height: 0.8667rem;
 	padding: .105rem 0;
 	padding-left: 0.5333rem;
-	padding-right: 0.5867rem;
+	padding-right: 0.4444867rem;
 	border: 1.06px solid #000000;
 	border-radius: 51.75px;
-	gap: 1rem;
+	gap: .7rem;
 	cursor: pointer;
 
 
@@ -31,6 +31,8 @@
 		line-height: 1.1;
 		transform: translateY(0.0092rem);
 		user-select: none;
+		width: 100%;
+		text-wrap: nowrap;
 	}
 
 	img {

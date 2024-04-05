@@ -1,0 +1,27 @@
+main.landing {
+	gap: 1.6000rem;
+
+	.title-block {
+		gap: 0.0800rem;
+	}
+
+	.carousel {
+		margin-top: 0.6rem;
+	}
+
+	.about-us {
+		p.body-1 {
+			margin-top: .125rem;
+		}
+
+		.expert {
+			width: 7.3467rem;
+			height: 3.2400rem;
+		}
+
+		.client-box {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+}
