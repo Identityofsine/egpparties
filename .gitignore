@@ -5,4 +5,4 @@ dist/
 dist/*
 dist
 .next
-.next/
+.next/*
