@@ -29,10 +29,20 @@ export default function LandingPage() {
 				<h2>We have a team of experts dedicated to serving you!</h2>
 				<p className="text-left body-1">Our elite team of specialists masterfully immortalizes your moments with unparalled skill and finesse, going the extra mile to ensure customer satisfaction</p>
 				<div className="grid client-box">
-					<GradientCard className="expert" imgSrc="/images/c-1.png" title="" />
-					<GradientCard className="expert" imgSrc="/images/c-2.png" title="" />
-					<GradientCard className="expert" imgSrc="/images/c-3.png" title="" />
+					<div className="card-container">
+						<GradientCard className="expert" imgSrc="/images/c-1.png" title="100s of Clients" />
+						<p style={{ marginTop: '.15rem' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+					<div className="card-container">
+						<GradientCard className="expert" imgSrc="/images/c-2.png" title="1000s of Photos" />
+						<p style={{ marginTop: '.15rem' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+					<div className="card-container">
+						<GradientCard className="expert" imgSrc="/images/c-3.png" title="Hours of Video" />
+						<p style={{ marginTop: '.15rem' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
 				</div>
+				<Button className="fill-width margin-top-07" text="Learn More About Us" primary={false} />
 			</section>
 		</main>
 	)

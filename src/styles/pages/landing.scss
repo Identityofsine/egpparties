@@ -14,14 +14,23 @@ main.landing {
 			margin-top: .125rem;
 		}
 
+		.card-container,
 		.expert {
 			width: 7.3467rem;
+		}
+
+		.expert {
 			height: 3.2400rem;
 		}
 
 		.client-box {
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
+			max-width: var(--margin-width);
+			width: 100%;
+			margin-top: 0.60rem;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+
 		}
 	}
 }
