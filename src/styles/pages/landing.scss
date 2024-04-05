@@ -59,4 +59,10 @@ main.landing {
 
 	}
 
+	.events {
+		&-grid {
+			display: grid;
+		}
+	}
+
 }
