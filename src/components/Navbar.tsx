@@ -13,7 +13,7 @@ export function Logo() {
 
 export function NavBar() {
 	return (
-		<nav className="relative">
+		<nav className="relative center-margin">
 			<div className="content flex align-center justify-between margin-width center-margin">
 				<Logo />
 				<div className="flex align-center nav-gap">
