@@ -1,11 +1,40 @@
 main.consultation {
+	.container-father {
+		gap: 0.2533rem;
+	}
+
 	.container {
 		max-width: 10.3200rem;
 		min-height: 1.7600rem;
-		width: 100%;
+		width: 10.32rem;
 		background-color: #ffffff;
 		filter: drop-shadow(0px 4px 64px rgba(0, 0, 0, 0.029999999329447746));
 		border-radius: 11px;
 		border: 1.05px solid var(--border-color);
+
+		.text-message {
+			padding-left: 0.4933rem;
+			gap: 0.3333rem;
+
+			p {
+				transform: translateY(0.0125rem);
+				color: black;
+			}
+		}
+
+		form {
+			padding: 0.5333rem 0.4933rem;
+			gap: 0.5467rem;
+
+			label {
+				font-size: 0.4000rem;
+				color: #000000;
+				font-weight: 500;
+			}
+
+			.label-gap {
+				gap: 0.2000rem;
+			}
+		}
 	}
 }

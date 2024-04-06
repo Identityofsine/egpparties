@@ -1,3 +1,4 @@
+'use client';
 import '../styles/button.scss'
 
 type ButtonProps = {

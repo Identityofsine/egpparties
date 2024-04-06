@@ -1,0 +1,36 @@
+.toggle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: fit-content;
+	min-height: 0.8667rem;
+	border: 1.06px solid #000000;
+	border-radius: 51.75px;
+	gap: .7rem;
+	cursor: pointer;
+	padding: .15rem 0;
+
+	&.active {
+		background: var(--button-primary);
+		border: none;
+
+		p {
+			color: white;
+			font-weight: 500;
+		}
+
+		img {
+			filter: invert(83%) sepia(99%) saturate(2%) hue-rotate(43deg) brightness(108%) contrast(100%);
+		}
+	}
+
+	p {
+		line-height: 1.1;
+		transform: translateY(0.0092rem);
+		user-select: none;
+		width: 100%;
+		text-wrap: nowrap;
+		color: black;
+	}
+
+}
