@@ -1,4 +1,5 @@
 const brandSettings = {
+	path: "/",
 	name: 'Exquisite Gallery Photography',
 	shortName: 'EGP',
 	llc: 'EGP. LLC',

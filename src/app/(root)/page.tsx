@@ -2,6 +2,7 @@ import Button from '@/components/Button';
 import { Carousel, CarouselItem } from '@/components/Carousel';
 import { GradientCard } from '@/components/GradientCard';
 import '@/styles/pages/landing.scss';
+import brandSettings from '../brand.settings';
 
 export default function LandingPage() {
 	return (
@@ -88,13 +89,25 @@ export default function LandingPage() {
 				<div className="flex column align-center">
 					<h2 className="fill-width" style={{ fontWeight: '500' }}>What We Do</h2>
 					<div className="events-grid margin-top-02">
-						<GradientCard className="event event-1" imgSrc="/images/wwd-1.png" title="Weddings" />
-						<GradientCard className="event event-2" imgSrc="/images/wwd-2.png" title="Parties" />
-						<GradientCard className="event event-3" imgSrc="/images/wwd-4.png" title="Sweet 16s" />
-						<GradientCard className="event event-4 4" imgSrc="/images/wwd-3.png" title="Events" />
-						<div className="flex column fill-height event-flex">
-							<GradientCard className="event event-5 c3" imgSrc="/images/wwd-5.png" title="Family" />
-							<GradientCard className="event event-6 c3" imgSrc="/images/wwd-6.png" title="Personal" />
+						<a href={brandSettings.path + 'services/photography#wedding'} className="event event-1">
+							<GradientCard className="fill-width fill-height" imgSrc="/images/wwd-1.png" title="Weddings" />
+						</a>
+						<a href={brandSettings.path + 'services/photography#pep'}>
+							<GradientCard className="fill-width fill-height" imgSrc="/images/wwd-2.png" title="Parties" />
+						</a>
+						<a href={brandSettings.path + 'services/photography#pep'}>
+							<GradientCard className="fill-width fill-height" imgSrc="/images/wwd-4.png" title="Sweet 16s" />
+						</a>
+						<a href={brandSettings.path + 'services/photography#pep'}>
+							<GradientCard className="fill-width fill-height" imgSrc="/images/wwd-3.png" title="Events" />
+						</a>
+						<div className="flex column fill-height event-flex ">
+							<a href={brandSettings.path + 'services/photography#family'} className="event event-5 fill-height">
+								<GradientCard className="event event-5 c3 fill-height" imgSrc="/images/wwd-5.png" title="Family" />
+							</a>
+							<a href={brandSettings.path + 'services/photography#pep'} className="event event-6 fill-height">
+								<GradientCard className="event event-5 c3 fill-height" imgSrc="/images/wwd-6.png" title="Personal" />
+							</a>
 						</div>
 					</div>
 					<div className="flex column fill-width gap-01 margin-top-03">
