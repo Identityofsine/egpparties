@@ -1,4 +1,9 @@
+body {
+	scroll-behavior: smooth;
+}
+
 main.photography {
+
 	section {
 		max-width: var(--margin-width);
 	}
@@ -30,6 +35,7 @@ main.photography {
 
 		.heart-container {
 
+			&.content,
 			.content {
 				gap: .6000rem;
 
