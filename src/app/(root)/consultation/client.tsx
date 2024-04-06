@@ -25,13 +25,19 @@ type ConsultationFormProps = {
 	services: string[]
 }
 
+const date = new Date();
+
+const toTens = (n: number) => {
+	return n < 10 ? `0${n}` : `${n}`
+}
+
 export function ConsultationForm(props: { services: string[] }) {
 
 	const [data, setData] = React.useState<FormOutput>({
 		name: "",
 		phone: "",
 		email: "",
-		date: "",
+		date: `${date.getFullYear()}-${toTens(date.getMonth())}-${toTens(date.getDay())}`,
 		location: "",
 		service: props.services,
 		message: ""
@@ -44,6 +50,7 @@ export function ConsultationForm(props: { services: string[] }) {
 	}
 
 	function submit() {
+		console.log(data);
 		let valid = true;
 		let missing: string[] = [];
 		Object.keys(data).forEach(key => {
@@ -52,13 +59,17 @@ export function ConsultationForm(props: { services: string[] }) {
 				valid = false;
 				missing.push(key.charAt(0).toUpperCase() + key.slice(1));
 			}
-			if (key === 'phone' && data[key].length !== 10) {
+			else if (key === 'phone' && data[key].length !== 10) {
 				valid = false;
 				missing.push('Phone Number');
 			}
-			if (key === 'email' && !data[key].match(regexPatterns.email)) {
+			else if (key === 'email' && !data[key].match(regexPatterns.email)) {
 				valid = false;
 				missing.push('Email');
+			}
+			else if (key === 'message' && (data[key].length < brandSettings.consultation.textarea.min || data[key].length > brandSettings.consultation.textarea.max)) {
+				valid = false;
+				missing.push('Message');
 			}
 		})
 		if (!valid) {
@@ -80,7 +91,7 @@ export function ConsultationForm(props: { services: string[] }) {
 			<div className="container flex column justify-center">
 				<form className="flex column">
 					<div className="flex column label-gap">
-						<label htmlFor="name">Name:</label>
+						<label htmlFor="name">*Name:</label>
 						<Input
 							type="text"
 							name="firstname"
@@ -90,7 +101,7 @@ export function ConsultationForm(props: { services: string[] }) {
 						/>
 					</div>
 					<div className="flex column label-gap">
-						<label htmlFor="phone-number">Phone Number:</label>
+						<label htmlFor="phone-number">*Phone Number:</label>
 						<Input
 							type="tel"
 							name="phonenumber"
@@ -102,7 +113,7 @@ export function ConsultationForm(props: { services: string[] }) {
 						/>
 					</div>
 					<div className="flex column label-gap">
-						<label htmlFor="email">Email:</label>
+						<label htmlFor="email">*Email:</label>
 						<Input
 							type="text"
 							id="email"
@@ -111,16 +122,16 @@ export function ConsultationForm(props: { services: string[] }) {
 						/>
 					</div>
 					<div className="flex column label-gap">
-						<label htmlFor="calender">When (Is Your Event?):</label>
+						<label htmlFor="calender">*When (Is Your Event?):</label>
 						<Input
-							type="text"
+							type="date"
 							id="calender"
-							placeholder="April 6th, 2024"
+							defaultValue={data.date}
 							onChange={(e) => updateState("date", e)}
 						/>
 					</div>
 					<div className="flex column label-gap">
-						<label htmlFor="Event">Event Location:</label>
+						<label htmlFor="Event">*Event Location:</label>
 						<Input
 							type="text"
 							id="location"
@@ -139,13 +150,15 @@ export function ConsultationForm(props: { services: string[] }) {
 						</div>
 					</div>
 					<div className="flex column label-gap">
-						<label htmlFor="Event">Please Provide A Brief Description Stating What Kind Of Event It Is:</label>
+						<label htmlFor="Event">*Please Provide A Brief Description Stating What Kind Of Event It Is:</label>
 						<TextArea
 							id="message"
 							placeholder="Your Message"
 							onChange={(e) => updateState("message", e)}
 						/>
+						<p className={`small-text text-right text-area-text ${(data.message.length >= brandSettings.consultation.textarea.min && data.message.length <= brandSettings.consultation.textarea.max) ? 'good' : 'bad'}`}>{data.message.length} / {brandSettings.consultation.textarea.max}</p>
 					</div>
+					<p className="small-text">*{brandSettings.consultation.messages.error[0]}</p>
 					<Button onClick={submit} text="Submit Your Form!" />
 				</form>
 			</div>

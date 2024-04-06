@@ -40,6 +40,18 @@ main.consultation {
 				font-weight: 500;
 			}
 
+			.text-area-text {
+				line-height: 100%;
+
+				&.bad {
+					color: #ff0033;
+				}
+
+				&.good {
+					color: #2ecc71;
+				}
+			}
+
 			.label-gap {
 				gap: 0.2000rem;
 			}

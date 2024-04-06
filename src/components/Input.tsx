@@ -7,7 +7,7 @@ type InputProps = {
 	maxLength?: number;
 } & Omit<Omit<React.InputHTMLAttributes<HTMLInputElement>, 'onChange'>, 'maxLength'>;
 
-export function Input(props: InputProps) {
+export const Input = (props: InputProps) => {
 
 	function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
 		e.target.value = e.target.value.replace(new RegExp(props.pattern || ''), '');
@@ -18,6 +18,14 @@ export function Input(props: InputProps) {
 	}
 
 	return (
-		<input {...props} onChange={handleChange} />
+		<div className="input-wrapper">
+			<input {...props} onChange={handleChange} />
+		</div>
+	)
+}
+
+Input.Calendar = (props: InputProps) => {
+	return (
+		<Input {...props} type="date" />
 	)
 }

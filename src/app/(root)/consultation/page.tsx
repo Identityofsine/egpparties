@@ -15,8 +15,6 @@ type ConsultationParams = {
 
 export default function Consultation(props: ConsultationParams) {
 	let services: string | string[] = props.searchParams.services;
-	console.log(services);
-
 	if (Array.isArray(services)) {
 		services.map(service => (
 			brandSettings.consultation.services.findIndex(s => s === service) !== -1
