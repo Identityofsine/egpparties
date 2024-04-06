@@ -1,3 +1,15 @@
+button,
+input[type="submit"],
+input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
 .button {
 	display: flex;
 	align-items: center;
@@ -11,6 +23,7 @@
 	border-radius: 51.75px;
 	gap: .7rem;
 	cursor: pointer;
+	text-align: left;
 
 	&.primary {
 		background: var(--button-primary);

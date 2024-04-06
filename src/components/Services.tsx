@@ -28,7 +28,7 @@ export default function Services(props: ServicesProps) {
 
 	return (
 		<>
-			<input type="hidden" hidden={true} name="services" value={services.filter(service => service.active).map(service => service.name).join(', ')} />
+			<input type="hidden" hidden={true} name="services" value={JSON.stringify(services.filter(service => service.active))} />
 			{services.map((service, index) => (
 				<>
 					< Toggleable key={index} text={service.name} active={service.active} onClick={() => setActive(index)} />
