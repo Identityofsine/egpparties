@@ -26,9 +26,9 @@ export default function PhotographyPage() {
 					</div>
 					<div className="flex fill-width flex-1 content heart-container" id="pep">
 						<div className="grid">
-							<GradientCard imgSrc="/images/photography-3.png" className="grid-item-1" title="Parties" />
-							<GradientCard imgSrc="/images/photography-4.png" className="c4" title="Corporate Events" />
-							<GradientCard imgSrc="/images/photography-5.png" className="" title="Personal" />
+							<GradientCard imgSrc="/images/photography-12.png" className="grid-item-1" title="Parties" />
+							<GradientCard imgSrc="/images/photography-3.png" className="c4" title="Corporate Events" />
+							<GradientCard imgSrc="/images/photography-4.png" className="" title="Personal" />
 						</div>
 						<div className="flex column flex-1">
 							<h2>Capture the Fun</h2>
@@ -47,10 +47,7 @@ export default function PhotographyPage() {
 							<h2>Capture the Fun</h2>
 							<p>At <b>EGP</b>, we love to party, but we also know the importance of preserving those moments through photography.</p>
 							<div className="flex column gap-01 margin-top-06">
-								<Button text="Book Us For Your Party" primary={false} />
-								<Button text="Book Us For Your Corporate Event" primary={false} />
-								<Button text="Book Us For Your Next Personal Event" primary={false} />
-								<Button text="Contact Us Directly!" primary={true} />
+								<Button text="Book a Photoshoot with Us" primary={false} />
 							</div>
 						</div>
 					</div>

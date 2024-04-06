@@ -56,12 +56,14 @@ export default function LandingPage() {
 						<img src="/images/wd-1.png" alt="Photography" />
 						<h3>We’ll do the picture taking while you can focus on making memories.</h3>
 					</div>
-					<Button className="fill-width margin-top-03" text="Learn More About Our Photography Methods " primary={false} />
+					<a href={brandSettings.path + "services/photography"}>
+						<Button className="fill-width margin-top-03" text="Learn More About Our Photography Methods " primary={false} />
+					</a>
 				</div>
 				<h3 className="center-text">&</h3>
 				<div className="flex column fill-width we-do-block we-do-block-2">
 					<div className="title-container">
-						<h1>We can DJ</h1>
+						<h1>We Can DJ</h1>
 						<p className="margin-top-02">Important moments in our lives serve as markers of our journey, encapsulating memories we hold dear. They're fleeting, yet impactful, weaving the fabric of our identity. However, the task of capturing these moments can be a stressful  endeavor. Amidst the whirlwind of emotions and spontaneity, there's a  delicate balance between living in the moment and ensuring it's  preserved for posterity.</p>
 					</div>
 					<div className="photo-container flex column">
