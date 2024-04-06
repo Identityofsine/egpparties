@@ -3,10 +3,10 @@ import '../styles/gradient-card.scss'
 type GradientCardProps = {
 	className?: string
 	imgSrc: string
-	title: string
+	title?: string
 }
 
-export function GradientCard({ className, imgSrc, title }: GradientCardProps) {
+export function GradientCard({ className, imgSrc, title = "" }: GradientCardProps) {
 	return (
 		<div className={`gradient-card ${className && className}`}>
 			<div className="text-container">
