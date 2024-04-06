@@ -1,9 +1,13 @@
+@import '../app/scss_lib/breakpoints.scss';
+
 nav {
 	max-width: var(--max-width);
 	width: 100%;
 	height: 1.4667rem;
 
-
+	@include onMobile() {
+		margin-top: 1rem !important;
+	}
 
 	p.elem,
 	a {
@@ -33,6 +37,10 @@ nav {
 		line-height: 100%;
 		font-weight: 600;
 		color: black !important;
+
+		@include onMobile() {
+			font-size: 0.5143rem;
+		}
 	}
 
 	.line {
@@ -45,5 +53,26 @@ nav {
 	img {
 		width: 0.6800rem;
 		height: 0.6800rem;
+	}
+
+	&.mobile {
+		@include onMobile() {
+			gap: 0.2703rem;
+
+			p {
+				transform: translateY(.0125rem);
+				font-size: 0.8649rem;
+			}
+
+			.line {
+				width: 2px;
+				height: 1.3514rem;
+			}
+
+			img {
+				width: 1.3514rem;
+				height: 1.3514rem;
+			}
+		}
 	}
 }

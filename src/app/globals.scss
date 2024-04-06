@@ -65,6 +65,11 @@
 	@include media('<=LGtablet') {
 		font-size: 35.6px;
 	}
+
+	@include media('<=LGphone') {
+		font-size: 37.5px;
+		--margin-width: calc(var(--max-width) - 1.5867rem);
+	}
 }
 
 * {
@@ -148,4 +153,44 @@ p {
 	font-size: 0.3067rem;
 	line-height: 197%;
 	color: rgba(16, 16, 16, 0.8);
+}
+
+@include onMobile() {
+
+	//title-3
+	h1 {
+		font-size: 1.6216rem;
+	}
+
+	//title-2
+	h2 {
+		font-size: 1rem;
+	}
+
+	//sub-title
+	h3 {
+		font-size: 0.8649rem;
+	}
+
+	//title-4
+	h4 {
+		font-size: 1.2162rem;
+	}
+
+	//card-font-1
+	h5 {
+		font-size: 1.0541rem;
+	}
+
+	//title-5
+	h6 {
+		font-weight: 300;
+		font-size: 1.2432rem;
+		line-height: 127%;
+	}
+
+	p {
+		font-size: 0.3243rem;
+		line-height: 197%;
+	}
 }

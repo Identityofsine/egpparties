@@ -32,8 +32,8 @@ const servicesItems: ListItem[] = [
 export function Footer() {
 	return (
 		<footer className="full-width">
-			<div className="content flex justify-between center-margin">
-				<div className="info flex column fit-width justify-between fill-height">
+			<div className="content flex m-flex-column m-height-fill m-align-center justify-between m-gap-08 center-margin ">
+				<div className="info flex column fit-width m-width-fill fill-height m-gap-04">
 					<div className="top">
 						<Logo />
 						<p className="description">{brandSettings.description}</p>
@@ -42,12 +42,12 @@ export function Footer() {
 						<span>Copyright © 2024 By {brandSettings.llc}</span>
 					</div>
 				</div>
-				<div className="right flex column justify-between">
+				<div className="right flex column justify-between m-width-fill m-gap-10">
 					<div className="links flex justify-between">
 						<List title="Company" items={companyItems} />
 						<List title="Services" items={servicesItems} />
 					</div>
-					<div className="buttons flex column button-gap">
+					<div className="buttons flex column button-gap m-gap-05">
 						<a href="/contact">
 							<Button text="Contact Us" />
 						</a>

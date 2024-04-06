@@ -290,8 +290,24 @@ img {
 	user-select: none;
 }
 
+.mobile-enable {
+	display: none;
+}
+
+.mobile-disable {
+	display: inherit;
+}
+
 //mobile
 @include onMobile() {
+
+	.mobile-enable {
+		display: inherit;
+	}
+
+	.mobile-disable {
+		display: none;
+	}
 
 	//flex settings
 
@@ -318,6 +334,11 @@ img {
 	.m-justify-between {
 		justify-content: space-between;
 	}
+
+	.m-align-center {
+		align-items: center;
+	}
+
 
 	//flex settings::gap
 	.m-gap-01 {
@@ -481,7 +502,16 @@ img {
 	}
 
 	.m-width-fill {
-		width: 100%;
+		width: 100% !important;
+	}
+
+	//height stuff
+	.m-height-fit {
+		height: fit-content !important;
+	}
+
+	.m-height-fill {
+		height: 100% !important;
 	}
 
 }

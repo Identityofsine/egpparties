@@ -1,3 +1,5 @@
+@import '../app/scss_lib/breakpoints.scss';
+
 footer {
 	position: relative;
 	margin-top: auto;
@@ -6,6 +8,7 @@ footer {
 	padding-bottom: 0.5067rem;
 	background: #fff;
 	box-shadow: 0px -6px 64px rgba(0, 0, 0, 0.03999999910593033);
+
 
 	&::before {
 		content: '';
@@ -33,6 +36,12 @@ footer {
 				.description {
 					margin-top: 0.1rem;
 					width: 6.8rem;
+
+					@include onMobile() {
+						width: auto;
+						font-size: 0.3714rem;
+					}
+
 				}
 			}
 
@@ -46,9 +55,26 @@ footer {
 
 			.button-gap {
 				gap: 0.1067rem;
+
+				@include onMobile() {
+					gap: 0.2rem;
+				}
 			}
 		}
 	}
+
+	@include onMobile() {
+		height: 15.3243rem;
+		padding-top: 1.0571rem;
+		padding-bottom: 2.6286rem;
+
+		.content {
+			span {
+				font-size: 0.3286rem !important;
+			}
+		}
+	}
+
 }
 
 .list {
@@ -58,12 +84,23 @@ footer {
 	}
 
 	p.title {
+		@include onMobile() {
+			font-size: 0.5676rem;
+		}
+
 		font-size: 0.3867rem;
 		font-weight: 600;
 	}
 
 	.list-items {
 		margin-top: 0.24rem;
+
+		@include onMobile() {
+			p {
+				font-size: 0.3514rem !important;
+
+			}
+		}
 
 		p {
 			font-weight: 400;
