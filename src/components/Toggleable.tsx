@@ -10,7 +10,7 @@ type ToggleableProps = {
 
 export default function Toggleable(props: ToggleableProps) {
 	return (
-		<div className="toggle">
+		<div className={`toggle ${props.active ? 'active' : ''}`} onClick={() => props.onClick?.()}>
 			<p>{props.text}</p>
 		</div>
 	)

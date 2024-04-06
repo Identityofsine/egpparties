@@ -1,20 +1,58 @@
 .toggle {
+	$speed: 200ms;
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	width: fit-content;
 	min-height: 0.8667rem;
-	padding: .105rem 0;
-	padding-left: 0.5333rem;
-	padding-right: 0.4444867rem;
+	padding: .105rem .45rem;
 	border: 1.06px solid #000000;
 	border-radius: 51.75px;
 	gap: .7rem;
 	cursor: pointer;
+	transition: all $speed ease-in-out;
+
+	@keyframes toggle {
+		0% {
+			width: 0%;
+			height: 0%
+		}
+
+		100% {
+			width: 100%;
+			height: 100%
+		}
+	}
+
+	&::before {
+		position: absolute;
+		content: '';
+		width: 0%;
+		height: 0%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: var(--button-primary);
+		border-radius: 51.75px;
+		transition: all $speed ease-in-out;
+	}
 
 	&.active {
-		background: var(--button-primary);
-		border: none;
+
+		&::before {
+			position: absolute;
+			content: '';
+			width: 100%;
+			height: 100%;
+			//center
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background: var(--button-primary);
+			border-radius: 51.75px;
+			border: 1.06px solid #000000;
+		}
 
 		p {
 			color: white;

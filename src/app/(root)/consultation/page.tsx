@@ -1,5 +1,6 @@
 import Button from '@/components/Button';
 import { Input } from '@/components/Input';
+import Services from '@/components/Services';
 import TextArea from '@/components/TextArea';
 import Toggleable from '@/components/Toggleable';
 import '@/styles/pages/consultation.scss';
@@ -41,7 +42,7 @@ export default function Consultation() {
 						<div className="flex column label-gap">
 							<label htmlFor="Event">Services:</label>
 							<div className="flex align-center gap-01">
-								<Toggleable text={"Photobooth"} />
+								<Services services={["Photography", "Videography", "Both"]} />
 							</div>
 						</div>
 						<div className="flex column label-gap">
