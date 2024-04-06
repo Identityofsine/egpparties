@@ -41,8 +41,8 @@ export default function Consultation() {
 						</div>
 						<div className="flex column label-gap">
 							<label htmlFor="Event">Services:</label>
-							<div className="flex align-center gap-01">
-								<Services services={["Photography", "Videography", "Both"]} />
+							<div className="flex align-center gap-01 flex-wrap">
+								<Services services={["Photobooth", "Drone Shots", "Printing", "DJ", "Party Add-Ons"]} />
 							</div>
 						</div>
 						<div className="flex column label-gap">

@@ -1,5 +1,5 @@
 .toggle {
-	$speed: 200ms;
+	$speed: 150ms;
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -11,7 +11,7 @@
 	border-radius: 51.75px;
 	gap: .7rem;
 	cursor: pointer;
-	transition: all $speed ease-in-out;
+	transition: all $speed linear;
 
 	@keyframes toggle {
 		0% {
@@ -35,7 +35,7 @@
 		transform: translate(-50%, -50%);
 		background: var(--button-primary);
 		border-radius: 51.75px;
-		transition: all $speed ease-in-out;
+		transition: all $speed linear;
 	}
 
 	&.active {
