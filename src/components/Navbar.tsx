@@ -18,7 +18,7 @@ export function NavBar() {
 				<Logo />
 				<div className="flex align-center nav-gap">
 					<a href="/#">Services</a>
-					<a href="/#">About</a>
+					<a href="/about">About</a>
 					<a href="/consultation">Contact</a>
 				</div>
 			</div>
