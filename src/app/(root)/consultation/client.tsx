@@ -6,6 +6,7 @@ import Button from "@/components/Button";
 import { Input } from "@/components/Input";
 import Services from "@/components/Services";
 import TextArea from "@/components/TextArea";
+import { useRouter } from "next/navigation";
 import React, { useEffect } from "react";
 
 const default_message = "Guaranteed Response Time of 24 Hours or Less!";
@@ -32,6 +33,7 @@ export function ConsultationForm() {
 		message: ""
 	});
 	const [currentMessage, setCurrentMessage] = React.useState(default_message);
+	const router = useRouter();
 
 	function updateState<K extends keyof FormOutput>(key: K, value: FormOutput[K]) {
 		setData({ ...data, [key]: value });
@@ -57,14 +59,16 @@ export function ConsultationForm() {
 		})
 		if (!valid) {
 			setCurrentMessage(`${brandSettings.consultation.messages.error[400]}: Fix ${missing.join(", ")}`);
-			return;
+		} else {
+			setCurrentMessage(brandSettings.consultation.messages.success);
 		}
+		router.push('#message-box');
 	}
 
 	return (
 		<div className="flex column center-margin container-father ">
 			<div className="container flex align-center">
-				<div className="text-message flex align-center">
+				<div className="text-message flex align-center" id="message-box">
 					<img src="/icons/chat-bubble.svg" alt="consultation" />
 					<p>{currentMessage}</p>
 				</div>
@@ -75,7 +79,7 @@ export function ConsultationForm() {
 						<label htmlFor="name">Name:</label>
 						<Input
 							type="text"
-							name="name"
+							name="firstname"
 							id="name"
 							placeholder="Your Name"
 							onChange={(e) => updateState("name", e)}
