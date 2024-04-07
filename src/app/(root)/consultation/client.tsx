@@ -21,7 +21,11 @@ type FormOutput = {
 	message: string
 }
 
-export function ConsultationForm() {
+type ConsultationFormProps = {
+	services: string[]
+}
+
+export function ConsultationForm(props: { services: string[] }) {
 
 	const [data, setData] = React.useState<FormOutput>({
 		name: "",
@@ -29,7 +33,7 @@ export function ConsultationForm() {
 		email: "",
 		date: "",
 		location: "",
-		service: [],
+		service: props.services,
 		message: ""
 	});
 	const [currentMessage, setCurrentMessage] = React.useState(default_message);
@@ -93,7 +97,7 @@ export function ConsultationForm() {
 							id="phone-number"
 							placeholder="Your Phone Number"
 							pattern={regexPatterns.phone}
-							maxlength={10}
+							maxLength={10}
 							onChange={(e) => updateState("phone", e)}
 						/>
 					</div>
@@ -130,6 +134,7 @@ export function ConsultationForm() {
 							<Services
 								services={brandSettings.consultation.services}
 								onChange={(services) => updateState("service", services.map(service => service.name))}
+								query={() => data.service}
 							/>
 						</div>
 					</div>
