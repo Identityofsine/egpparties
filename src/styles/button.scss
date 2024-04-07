@@ -16,9 +16,11 @@
 	text-align: left;
 
 	@include onMobile() {
-		padding: 0.25rem 0;
+		padding: 0.35rem 0;
 		padding-left: 0.5333rem;
 		padding-right: 0.4444867rem;
+		width: fit-content;
+		overflow-wrap: break-word;
 	}
 
 
@@ -45,9 +47,11 @@
 		color: black;
 
 		@include onMobile() {
-			transform: translateY(0.015rem);
-			font-size: 0.5029rem;
+			transform: translateY(0.004rem);
+			font-size: 0.5135rem;
 			line-height: 110%;
+			text-wrap: wrap;
+			padding-left: .1rem;
 		}
 	}
 

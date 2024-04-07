@@ -1,3 +1,5 @@
+@import '../../app/scss_lib/breakpoints.scss';
+
 main.landing {
 	gap: 1.6000rem;
 
@@ -18,10 +20,19 @@ main.landing {
 		.expert {
 			max-width: 7.3467rem;
 			min-width: 5rem;
+
+			@include onMobile() {
+				max-width: 9.3784rem;
+				width: 100%;
+			}
 		}
 
 		.expert {
 			height: 3.2400rem;
+
+			@include onMobile() {
+				height: 4.1600rem;
+			}
 		}
 
 		.client-box {
@@ -31,6 +42,11 @@ main.landing {
 			display: grid;
 			gap: .1rem;
 			grid-template-columns: repeat(3, minmax(0, 1fr));
+
+			@include onMobile() {
+				gap: 1.2000rem;
+				grid-template-columns: 1fr;
+			}
 
 		}
 	}
@@ -68,12 +84,36 @@ main.landing {
 			grid-gap: 0.2800rem 0.3867rem;
 			grid-auto-rows: 4.9067rem;
 
+			@include onMobile() {
+				width: 95vw;
+				grid-template-columns: 1fr 1fr;
+				grid-auto-rows: 6.0270rem;
+				grid-gap: 0.2800rem 0.1867rem;
+				max-height: 100%;
+			}
+
 			.event {
 				display: block;
 
 				&-1 {
 					grid-row: span 2;
 				}
+
+				&-1,
+				&-2,
+				&-4 {
+					@include onMobile() {
+						grid-row: span 1;
+						grid-column: span 2;
+					}
+				}
+
+				&-3 {
+					@include onMobile() {
+						grid-row: span 1;
+					}
+				}
+
 
 				&-flex {
 					display: flex;

@@ -67,7 +67,7 @@
 	}
 
 	@include media('<=LGphone') {
-		font-size: 37.5px;
+		font-size: 37px;
 		--margin-width: calc(var(--max-width) - 1.5867rem);
 	}
 }

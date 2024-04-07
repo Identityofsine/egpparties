@@ -15,12 +15,13 @@ export function CarouselItem({ img, alt }: CarouselItemProps) {
 
 type CarouselProps = {
 	children: React.ReactNode;
+	className?: string,
 }
 
-export function Carousel({ children }: CarouselProps) {
+export function Carousel({ className, children }: CarouselProps) {
 
 	return (
-		<div className="carousel">
+		<div className={"carousel " + className}>
 			<div className="carousel-container">
 				{children}
 			</div>
