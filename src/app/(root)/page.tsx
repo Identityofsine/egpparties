@@ -13,7 +13,7 @@ export default function LandingPage() {
 						<h2>Capture Your Precious Moment.</h2>
 						<h3>We do it all - EGP is a one stop shop!</h3>
 					</div>
-					<p className="center-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel urna porta nisi rutrum vulputate a id ex. Sed consequat gravida mi. Mauris ut augue auctor augue tempor condimentum. Duis porttitor lacinia massa vel tempus.</p>
+					<p className="center-text">Whether It's a sweet 16, a wedding, a graduation, a family reunion, a bar mitzvah, a quinceanera, a communion, or any other special occasion - we will provide the service.</p>
 					<div className="flex row align-center gap-01">
 						<Button text="Get A Free Consultation" />
 						<Button text="See Our Services" primary={false} />
@@ -32,15 +32,15 @@ export default function LandingPage() {
 				<div className="grid client-box">
 					<div className="card-container">
 						<GradientCard className="expert" imgSrc="/images/c-1.png" title="100s of Clients" />
-						<p style={{ marginTop: '.15rem' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<p style={{ marginTop: '.15rem' }}>Trusted by Suffolk County Police and Bethpage Federal Credit Union, among many others!</p>
 					</div>
 					<div className="card-container">
 						<GradientCard className="expert" imgSrc="/images/c-2.png" title="1000s of Photos" />
-						<p style={{ marginTop: '.15rem' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<p style={{ marginTop: '.15rem' }}>Countless Memories Perserved.</p>
 					</div>
 					<div className="card-container">
 						<GradientCard className="expert" imgSrc="/images/c-3.png" title="Hours of Video" />
-						<p style={{ marginTop: '.15rem' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<p style={{ marginTop: '.15rem' }}>Unlock the Power of Visual Storytelling With Our Expert Videography Services</p>
 					</div>
 				</div>
 				<Button className="fill-width margin-top-07" text="Learn More About Us" primary={false} />

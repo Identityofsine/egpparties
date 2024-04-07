@@ -2,7 +2,7 @@ main.services {
 	margin-top: 1rem;
 
 	.grid-container {
-		margin-top: 1.25rem;
+		margin-top: 2.0rem;
 		position: relative;
 		max-width: 17.9867rem;
 		width: 100%;
@@ -14,8 +14,8 @@ main.services {
 		&::before {
 			content: '';
 			position: absolute;
-			width: 110%;
-			height: 110%;
+			width: 115%;
+			height: 120%;
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);

@@ -17,7 +17,7 @@ export function NavBar() {
 			<div className="content flex align-center justify-between margin-width center-margin">
 				<Logo />
 				<div className="flex align-center nav-gap">
-					<a href="/#">Services</a>
+					<a href="/services">Services</a>
 					<a href="/about">About</a>
 					<a href="/consultation">Contact</a>
 				</div>

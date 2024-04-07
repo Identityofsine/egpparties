@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Toggleable from "./Toggleable";
 
 export type Service = {
@@ -9,12 +9,17 @@ export type Service = {
 }
 
 type ServicesProps = {
-	services: string[]
+	services: string[],
+	onChange?: (services: Service[]) => void
 }
 
 export default function Services(props: ServicesProps) {
 
 	const [services, setServices] = useState<Service[]>(props.services.map(service => ({ name: service, active: false })));
+
+	useEffect(() => {
+		props.onChange?.(services.filter(service => service.active));
+	}, [services]);
 
 	function setActive(index: number) {
 		const newServices = services.map((service, i) => {
