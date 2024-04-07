@@ -2,6 +2,10 @@
 
 // tailwind-style classes
 
+main {
+	min-height: 60vh;
+}
+
 section {
 	max-width: var(--max-width);
 	margin: 0 auto;

@@ -48,9 +48,15 @@ export function Footer() {
 						<List title="Services" items={servicesItems} />
 					</div>
 					<div className="buttons flex column button-gap">
-						<Button text="Contact Us" />
-						<Button text="egpimages@gmail.com" icon_type="email" primary={false} />
-						<Button text="631-500-4189" icon_type="phone" primary={false} />
+						<a href="/contact">
+							<Button text="Contact Us" />
+						</a>
+						<a href={`mailto::`}>
+							<Button text={brandSettings.contact.email} icon_type="email" primary={false} />
+						</a>
+						<a href={`tel::${brandSettings.contact.phone}`}>
+							<Button text={brandSettings.contact.phone} icon_type="phone" primary={false} />
+						</a>
 					</div>
 				</div>
 			</div>
