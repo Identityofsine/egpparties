@@ -92,6 +92,8 @@ h2,
 h3,
 h4,
 h5,
+h6,
+h7,
 p {
 	margin: 0;
 }
@@ -133,6 +135,13 @@ h5 {
 	font-size: 0.8533rem;
 	font-weight: 500;
 	color: white;
+}
+
+//title-5
+h6 {
+	font-weight: 300;
+	font-size: 1.6800rem;
+	line-height: 127%;
 }
 
 p {

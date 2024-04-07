@@ -10,7 +10,7 @@ export default function Consultation() {
 		<main className="consultation flex column margin-width">
 			<h4>Get An Estimate</h4>
 			<p>Get in touch - Let’s Create Timeless Memories Together.</p>
-			<div className="flex column center-margin container-father margin-top-08">
+			<div className="flex column center-margin container-father ">
 				<div className="container flex align-center">
 					<div className="text-message flex align-center">
 						<img src="/icons/chat-bubble.svg" alt="consultation" />

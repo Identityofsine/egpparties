@@ -3,11 +3,11 @@ import '../styles/navbar.scss'
 
 export function Logo() {
 	return (
-		<div className="flex align-center logo">
+		<a className="flex align-center logo" href={brandSettings.path}>
 			<p>{brandSettings.name}</p>
 			<div className="line"></div>
 			<img src={brandSettings.logo} alt="logo" />
-		</div>
+		</a>
 	)
 }
 
@@ -19,7 +19,7 @@ export function NavBar() {
 				<div className="flex align-center nav-gap">
 					<a href="/#">Services</a>
 					<a href="/#">About</a>
-					<a href="/#">Contact</a>
+					<a href="/consultation">Contact</a>
 				</div>
 			</div>
 		</nav>
