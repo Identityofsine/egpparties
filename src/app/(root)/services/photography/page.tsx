@@ -19,8 +19,8 @@ export default function PhotographyPage() {
 							<h2>Heart to Heart Moments</h2>
 							<p>EGP Photography specializes in wedding services and capturing heart-to-heart moments.</p>
 							<div className="flex column gap-01 margin-top-06">
-								<Button text="Book Photography For Your Wedding" primary={true} />
-								<Button text="Contact Us Directly!" primary={true} />
+								<Button className="m-width-fill" text="Book Photography For Your Wedding" primary={true} />
+								<Button className="m-width-fill" text="Contact Us Directly!" primary={true} />
 							</div>
 						</div>
 					</div>
@@ -85,27 +85,27 @@ export default function PhotographyPage() {
 						<div className="flex column flex-1">
 							<h2>Party Add-Ons</h2>
 							<p>Our Photobooths come alive with props for fun and unique captures.</p>
-							<div className="flex column gap-01 margin-top-06">
+							<div className="flex column gap-01 margin-top-06 m-width-fill">
 								<Button text="Get a Photobooth for Your Event" primary={false} />
 							</div>
 						</div>
 					</div>
-					<div className="flex fill-width flex-1 content content-gap" id="drone">
-						<GradientCard imgSrc="/images/photography-10.png" className="custom-dj c5" />
+					<div className="flex fill-width flex-1 content content-gap m-flex-column" id="drone">
+						<GradientCard imgSrc="/images/photography-10.png" className="custom-dj c5 m-width-fill" />
 						<div className="flex column flex-1">
 							<h2>Dream-like Angles</h2>
 							<p>We elevate memories and enhance celebrations with aerial perspectives: using drones for both videography and photography.</p>
 							<div className="flex column gap-01 margin-top-06">
-								<Button text="Book a Drone" primary={false} />
+								<Button className="m-width-fill" text="Book a Drone" primary={false} />
 							</div>
 						</div>
 					</div>
-					<div className="flex fill-width flex-1 content content-gap" id="printing">
-						<GradientCard imgSrc="/images/photography-11.png" className="print c5" />
+					<div className="flex fill-width flex-1 content content-gap m-flex-column" id="printing">
+						<GradientCard imgSrc="/images/photography-11.png" className="print c5 m-width-fill" />
 						<div className="flex column flex-1">
 							<h2>Dream-like Angles</h2>
 							<p>We elevate memories and enhance celebrations with aerial perspectives: using drones for both videography and photography.</p>
-							<div className="flex column gap-01 margin-top-06">
+							<div className="flex column gap-01 margin-top-06 m-width-fill">
 								<Button text="Book a Drone" primary={false} />
 							</div>
 						</div>
