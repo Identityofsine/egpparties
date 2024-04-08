@@ -28,9 +28,12 @@ export function NavBar() {
 					<a href="/about">About</a>
 					<a href="/consultation">Contact</a>
 				</div>
+				<NavBarMobile />
+				{ /* 
 				<div className="hamburger mobile-enable fit-height">
 					<img src="/icons/hamburger.svg" alt="" />
 				</div>
+				*/}
 			</div>
 		</nav>
 	)

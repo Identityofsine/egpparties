@@ -1,11 +1,18 @@
+@import '../app/scss_lib/breakpoints.scss';
+
 input {
 	border: 1.3px #D7D7D7 solid;
 	border-radius: 10px;
 	width: 9.3333rem;
 	height: 1.0667rem;
 	padding-left: 0.3600rem;
-
 	font-size: 0.4000rem;
+
+	@include onMobile() {
+		border: 1.5px #D7D7D7 solid;
+		height: 1.3rem;
+		font-size: 0.45rem;
+	}
 
 	&::placeholder {
 		color: #D2D2D2;
