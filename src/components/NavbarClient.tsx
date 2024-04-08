@@ -1,6 +1,8 @@
 'use client'
 import React, { Fragment } from "react"
 import Button from "./Button";
+import { Logo } from "./Navbar";
+import brandSettings from "@/app/brand.settings";
 
 export default function MobileNavBar() {
 	const [open, setOpen] = React.useState(false);
@@ -21,11 +23,19 @@ export default function MobileNavBar() {
 				<img src="/icons/hamburger.svg" alt="" />
 			</div>
 			<div className={`mobile-nav m-gap-04 ${open ? "open" : ""} `}>
-				<Button primary={false} text={"Home"} className="m-width-fill" />
-				<Button primary={false} text={"Services"} className="m-width-fill" />
-				<Button primary={false} text={"Contact"} className="m-width-fill" />
-				<Button primary={true} text={"Free Consultation"} className="m-width-fill" />
-
+				<Logo className="logo-nav" />
+				<a href={brandSettings.path} className="m-width-fill">
+					<Button primary={false} text={"Home"} className="m-width-fill" />
+				</a>
+				<a href={brandSettings.path} className="m-width-fill">
+					<Button primary={false} text={"Services"} className="m-width-fill" />
+				</a>
+				<a href={brandSettings.path} className="m-width-fill">
+					<Button primary={false} text={"Contact"} className="m-width-fill" />
+				</a>
+				<a href={brandSettings.path + "consultation"} className="m-width-fill">
+					<Button primary={true} text={"Free Consultation"} className="m-width-fill" />
+				</a>
 			</div>
 			<div className={`mobile-backdrop ${open ? "open" : ""} `} />
 		</Fragment>

@@ -75,6 +75,12 @@ nav {
 			&.open {
 				display: flex;
 			}
+
+			.logo-nav {
+				position: absolute;
+				top: 1.4rem;
+				left: .5rem;
+			}
 		}
 
 		&-backdrop {
@@ -103,7 +109,6 @@ nav {
 .logo {
 	gap: 0.1333rem;
 	position: relative;
-	z-index: 100001;
 	background: transparent;
 
 	p {

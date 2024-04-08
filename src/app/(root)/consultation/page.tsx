@@ -31,7 +31,7 @@ export default function Consultation(props: ConsultationParams) {
 	}
 
 	return (
-		<main className="consultation flex column margin-width">
+		<main className="consultation flex column margin-width m-max-width m-align-center">
 			<h4>Get An Estimate</h4>
 			<p>Get in touch - Let’s Create Timeless Memories Together.</p>
 			{/* @ts-ignore */}

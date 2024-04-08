@@ -5,7 +5,7 @@ import MobileNavBar from './NavbarClient'
 export function Logo({ className = "" }: { className?: string }) {
 	return (
 		<a className={"flex align-center logo" + ` ${className}`} href={brandSettings.path}>
-			{className === "mobile" ?
+			{className.includes("mobile") ?
 				<>
 					<p className="mobile-disable">{brandSettings.name}</p>
 					<p className="mobile-enable">{brandSettings.shortName}</p>
@@ -30,9 +30,6 @@ export function NavBar() {
 					<a href="/consultation">Contact</a>
 				</div>
 				<MobileNavBar />
-				{ /* 
-				
-				*/}
 			</div>
 		</nav>
 	)
