@@ -49,13 +49,13 @@ export function Footer() {
 					</div>
 					<div className="buttons flex column button-gap m-gap-05">
 						<a href="/contact">
-							<Button text="Contact Us" />
+							<Button className="m-width-fill" text="Contact Us" />
 						</a>
 						<a href={`mailto::`}>
-							<Button text={brandSettings.contact.email} icon_type="email" primary={false} />
+							<Button className="m-width-fill" text={brandSettings.contact.email} icon_type="email" primary={false} />
 						</a>
 						<a href={`tel::${brandSettings.contact.phone}`}>
-							<Button text={brandSettings.contact.phone} icon_type="phone" primary={false} />
+							<Button className="m-width-fill" text={brandSettings.contact.phone} icon_type="phone" primary={false} />
 						</a>
 					</div>
 				</div>

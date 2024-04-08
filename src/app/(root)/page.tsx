@@ -7,18 +7,20 @@ import brandSettings from '../brand.settings';
 export default function LandingPage() {
 	return (
 		<main className="landing flex justify-center column">
-			<section className="flex column align-center">
-				<div className="flex column align-center margin-width gap-01">
-					<div className="flex column align-center title-block">
-						<h2 className="m-text-center">Capture Your Precious Moment.</h2>
-						<h3>We do it all - EGP is a one stop shop!</h3>
+			<section className="flex column align-center max-width">
+				<div className="flex column align-center gap-01">
+					<div className="margin-width flex column align-center gap-01">
+						<div className="flex column align-center title-block">
+							<h2 className="m-text-center">Capture Your Precious Moment.</h2>
+							<h3 className="m-text-center">We do it all - EGP is a one stop shop!</h3>
+						</div>
+						<p className="center-text">Whether It's a sweet 16, a wedding, a graduation, a family reunion, a bar mitzvah, a quinceanera, a communion, or any other special occasion - we will provide the service.</p>
+						<div className="flex row align-center gap-01 m-flex-column m-margin-top-08">
+							<Button text="Get A Free Consultation" />
+							<Button text="See Our Services" primary={false} />
+						</div>
 					</div>
-					<p className="center-text">Whether It's a sweet 16, a wedding, a graduation, a family reunion, a bar mitzvah, a quinceanera, a communion, or any other special occasion - we will provide the service.</p>
-					<div className="flex row align-center gap-01 m-flex-column m-margin-top-08">
-						<Button text="Get A Free Consultation" />
-						<Button text="See Our Services" primary={false} />
-					</div>
-					<Carousel className="m-margin-top-08">
+					<Carousel className="m-margin-top-08 ">
 						<CarouselItem img="/images/c-1.png" />
 						<CarouselItem img="/images/c-2.png" />
 						<CarouselItem img="/images/c-3.png" />

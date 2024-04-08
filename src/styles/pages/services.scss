@@ -1,3 +1,5 @@
+@import '../../app/scss_lib/breakpoints.scss';
+
 main.services {
 	margin-top: 1rem;
 
@@ -11,6 +13,14 @@ main.services {
 		grid-auto-rows: 4.9067rem;
 		grid-gap: 0.2800rem 0.3867rem;
 
+		@include onMobile() {
+			margin-top: 1.5rem;
+			max-width: 10rem;
+			grid-template-columns: 1fr;
+			grid-template-rows: repeat(3, minmax(5.270rem, 1fr));
+			grid-gap: 0.2800rem 0.1867rem;
+		}
+
 		&::before {
 			content: '';
 			position: absolute;
@@ -23,10 +33,19 @@ main.services {
 			z-index: -1;
 			border: 1px solid var(--border-color);
 			border-radius: 10px;
+
+			@include onMobile() {
+				width: 110%;
+				height: 110%;
+			}
 		}
 
 		.grid-item-1 {
 			grid-row: span 2;
+
+			@include onMobile() {
+				grid-row: span 1;
+			}
 		}
 	}
 }

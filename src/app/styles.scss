@@ -291,11 +291,11 @@ img {
 }
 
 .mobile-enable {
-	display: none;
+	display: none !important;
 }
 
 .mobile-disable {
-	display: inherit;
+	display: inherit !important;
 }
 
 //mobile
