@@ -28,7 +28,6 @@ type ConsultationFormProps = {
 const date = new Date();
 
 const toTens = (n: number) => {
-	console.log(n);
 	return n < 10 ? `0${n}` : `${n}`
 }
 
@@ -45,7 +44,6 @@ export function ConsultationForm(props: { services: string[] }) {
 	});
 	const [currentMessage, setCurrentMessage] = React.useState(default_message);
 	const router = useRouter();
-	console.log(data.date);
 
 	function updateState<K extends keyof FormOutput>(key: K, value: FormOutput[K]) {
 		setData({ ...data, [key]: value });
