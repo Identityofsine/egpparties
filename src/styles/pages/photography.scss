@@ -1,3 +1,5 @@
+@import '../../app/scss_lib/breakpoints.scss';
+
 body {
 	scroll-behavior: smooth;
 }
@@ -47,6 +49,14 @@ main.photography {
 					grid-template-rows: repeat(2, 1fr);
 					grid-gap: 0.2667rem 0.1333rem;
 
+					&.m-text-mod {
+						@include onMobile() {
+							h5 {
+								font-size: .8rem !important;
+							}
+						}
+					}
+
 					&-item-1 {
 						grid-column: span 2;
 					}
@@ -89,13 +99,22 @@ main.photography {
 			grid-template-rows: repeat(2, 1fr);
 			grid-gap: 0.2133rem 0.1333rem;
 
+			@include onMobile() {
+				height: 8.5rem;
+			}
+
 			.first-item {
 				grid-column: span 2;
 			}
 
 			.special {
 				h5 {
+
 					font-size: 0.5867rem;
+
+					@include onMobile() {
+						font-size: 0.6267rem;
+					}
 				}
 			}
 

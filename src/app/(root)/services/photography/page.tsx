@@ -13,8 +13,8 @@ export default function PhotographyPage() {
 			<section className="what-we-do fill-width">
 				<h1 className="text-left fill-width">So,<br />Here's What We Do.</h1>
 				<div className="flex column gap margin-top-06">
-					<div className="flex fill-width flex-1 content heart-container" id="wedding">
-						<GradientCard imgSrc="/images/photography-2.png" className="full c5" title="Weddings" />
+					<div className="flex fill-width flex-1 content heart-container m-flex-column" id="wedding">
+						<GradientCard imgSrc="/images/photography-2.png" className="full c5 m-width-fill" title="Weddings" />
 						<div className="flex column flex-1">
 							<h2>Heart to Heart Moments</h2>
 							<p>EGP Photography specializes in wedding services and capturing heart-to-heart moments.</p>
@@ -24,8 +24,8 @@ export default function PhotographyPage() {
 							</div>
 						</div>
 					</div>
-					<div className="flex fill-width flex-1 content heart-container" id="pep">
-						<div className="grid">
+					<div className="flex fill-width flex-1 content heart-container m-flex-column" id="pep">
+						<div className="grid m-width-fill m-text-mod">
 							<GradientCard imgSrc="/images/photography-12.png" className="grid-item-1" title="Parties" />
 							<GradientCard imgSrc="/images/photography-3.png" className="c4" title="Corporate Events" />
 							<GradientCard imgSrc="/images/photography-4.png" className="" title="Personal" />
@@ -34,20 +34,20 @@ export default function PhotographyPage() {
 							<h2>Capture the Fun</h2>
 							<p>At <b>EGP</b>, we love to party, but we also know the importance of preserving those moments through photography.</p>
 							<div className="flex column gap-01 margin-top-06">
-								<Button text="Book Us For Your Party" primary={false} />
-								<Button text="Book Us For Your Corporate Event" primary={false} />
-								<Button text="Book Us For Your Next Personal Event" primary={false} />
-								<Button text="Contact Us Directly!" primary={true} />
+								<Button className="m-width-fill" text="Book Us For Your Party" primary={false} />
+								<Button className="m-width-fill" text="Book Us For Your Corporate Event" primary={false} />
+								<Button className="m-width-fill" text="Book Us For Your Next Personal Event" primary={false} />
+								<Button className="m-width-fill" text="Contact Us Directly!" primary={true} />
 							</div>
 						</div>
 					</div>
-					<div className="flex fill-width flex-1 content heart-container" id="family">
-						<GradientCard imgSrc="/images/wwd-5.png" className="full c2" title="Family" />
+					<div className="flex fill-width flex-1 content heart-container m-flex-column" id="family">
+						<GradientCard imgSrc="/images/wwd-5.png" className="full c2 m-width-fill" title="Family" />
 						<div className="flex column flex-1">
-							<h2>Capture the Fun</h2>
-							<p>At <b>EGP</b>, we love to party, but we also know the importance of preserving those moments through photography.</p>
+							<h2>Immortalize Your Life</h2>
+							<p>From Corporate Gatherings to Personal Milestones and Family Celebrations: Every moment is worth capturing.</p>
 							<div className="flex column gap-01 margin-top-06">
-								<Button text="Book a Photoshoot with Us" primary={false} />
+								<Button className="m-width-fill" text="Book a Photoshoot with Us" primary={false} />
 							</div>
 						</div>
 					</div>
@@ -56,28 +56,28 @@ export default function PhotographyPage() {
 			<section className="fill-width margin-width hwwcb">
 				<h6>Here’s What We Can Bring</h6>
 				<div className="flex column first-container margin-top-06">
-					<div className="flex fill-width flex-1 content content-gap" id="photobooth">
-						<GradientCard imgSrc="/images/photography-5.png" className="custom-photobooth c5" />
+					<div className="flex fill-width flex-1 content content-gap m-flex-column" id="photobooth">
+						<GradientCard imgSrc="/images/photography-5.png" className="custom-photobooth c5 m-width-fill" />
 						<div className="flex column flex-1">
 							<h2>Photobooth</h2>
 							<p>Our Photobooths come alive with props for fun and unique captures.</p>
 							<div className="flex column gap-01 margin-top-06">
-								<Button text="Get a Photobooth for Your Event" primary={false} />
+								<Button className="m-width-fill" text="Get a Photobooth for Your Event" primary={false} />
 							</div>
 						</div>
 					</div>
-					<div className="flex fill-width flex-1 content content-gap" id="dj">
-						<GradientCard imgSrc="/images/photography-6.png" className="custom-dj c5" />
+					<div className="flex fill-width flex-1 content content-gap m-flex-column" id="dj">
+						<GradientCard imgSrc="/images/photography-6.png" className="custom-dj c5 m-width-fill" />
 						<div className="flex column flex-1">
 							<h2>DJ</h2>
 							<p>Our Photobooths come alive with props for fun and unique captures.</p>
 							<div className="flex column gap-01 margin-top-06">
-								<Button text="Book a DJ" primary={false} />
+								<Button className="m-width-fill" text="Book a DJ" primary={false} />
 							</div>
 						</div>
 					</div>
-					<div className="flex fill-width flex-1 content content-gap" id="addons">
-						<div className="grid">
+					<div className="flex fill-width flex-1 content content-gap m-flex-column" id="addons">
+						<div className="grid m-width-fill">
 							<GradientCard imgSrc="/images/photography-7.png" className="special first-item c3" title="Facepainting" />
 							<GradientCard imgSrc="/images/photography-9.png" className="special c3" title="Cotton Candy" />
 							<GradientCard imgSrc="/images/photography-8.png" className="special c4" title="Popcorn" />
