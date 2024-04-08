@@ -27,10 +27,10 @@ export default function MobileNavBar() {
 				<a href={brandSettings.path} className="m-width-fill">
 					<Button primary={false} text={"Home"} className="m-width-fill" />
 				</a>
-				<a href={brandSettings.path} className="m-width-fill">
+				<a href={brandSettings.path + "services"} className="m-width-fill">
 					<Button primary={false} text={"Services"} className="m-width-fill" />
 				</a>
-				<a href={brandSettings.path} className="m-width-fill">
+				<a href={brandSettings.path + "contact"} className="m-width-fill">
 					<Button primary={false} text={"Contact"} className="m-width-fill" />
 				</a>
 				<a href={brandSettings.path + "consultation"} className="m-width-fill">

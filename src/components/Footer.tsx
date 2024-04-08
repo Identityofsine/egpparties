@@ -13,7 +13,13 @@ function List({ title, items }: { items: ListItem[], title: string }) {
 		<div className="list">
 			<p className="title">{title}</p>
 			<div className="list-items">
-				{items.map((item, index) => <p key={index}>{item.name}</p>)}
+				{items.map((item, index) =>
+					<a href={item.url}>
+						<p key={index}>
+							{item.name}
+						</p>
+					</a>
+				)}
 			</div>
 		</div>
 	)

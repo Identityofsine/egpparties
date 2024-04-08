@@ -813,6 +813,10 @@ img {
 		max-width: 100% !important;
 	}
 
+	.m-max-width-var {
+		max-width: var(--max-width) !important;
+	}
+
 	//height stuff
 	.m-height-fit {
 		height: fit-content !important;
@@ -888,6 +892,11 @@ img {
 
 	.m-gap-07 {
 		gap: 0.7rem;
+	}
+
+	//grid
+	.m-grid-center {
+		place-items: center;
 	}
 
 	//center 

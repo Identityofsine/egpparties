@@ -28,10 +28,10 @@ export default function LandingPage() {
 					</Carousel>
 				</div>
 			</section>
-			<section className="flex column margin-width about-us fill-width">
-				<h2>We have a team of experts dedicated to serving you!</h2>
-				<p className="text-left body-1 m-center-text">Our elite team of specialists masterfully immortalizes your moments with unparalled skill and finesse, going the extra mile to ensure customer satisfaction</p>
-				<div className="grid client-box">
+			<section className="flex column margin-width about-us fill-width ">
+				<h2 className="m-text-center">We have a team of experts dedicated to serving you!</h2>
+				<p className="text-left body-1 m-text-center">Our elite team of specialists masterfully immortalizes your moments with unparalled skill and finesse, going the extra mile to ensure customer satisfaction</p>
+				<div className="grid client-box m-center-margin m-grid-center">
 					<div className="card-container">
 						<GradientCard className="expert" imgSrc="/images/c-1.png" title="100s of Clients" />
 						<p className="margin-top-02 m-margin-top-03">Trusted by Suffolk County Police and Bethpage Federal Credit Union, among many others!</p>
