@@ -1,5 +1,6 @@
 import brandSettings from '@/app/brand.settings'
 import '../styles/navbar.scss'
+import MobileNavBar from './NavbarClient'
 
 export function Logo({ className = "" }: { className?: string }) {
 	return (
@@ -28,11 +29,9 @@ export function NavBar() {
 					<a href="/about">About</a>
 					<a href="/consultation">Contact</a>
 				</div>
-				<NavBarMobile />
+				<MobileNavBar />
 				{ /* 
-				<div className="hamburger mobile-enable fit-height">
-					<img src="/icons/hamburger.svg" alt="" />
-				</div>
+				
 				*/}
 			</div>
 		</nav>

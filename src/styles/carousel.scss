@@ -12,6 +12,8 @@
 
 .carousel {
 	width: 100%;
+	max-width: var(--max-width);
+	overflow: hidden;
 
 	&-container {
 		width: 100%;
