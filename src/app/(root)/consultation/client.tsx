@@ -28,6 +28,7 @@ type ConsultationFormProps = {
 const date = new Date();
 
 const toTens = (n: number) => {
+	console.log(n);
 	return n < 10 ? `0${n}` : `${n}`
 }
 
@@ -37,13 +38,14 @@ export function ConsultationForm(props: { services: string[] }) {
 		name: "",
 		phone: "",
 		email: "",
-		date: `${date.getFullYear()}-${toTens(date.getMonth())}-${toTens(date.getDay())}`,
+		date: `${date.getFullYear()}-${toTens(date.getMonth())}-${toTens(date.getDate())}`,
 		location: "",
 		service: props.services,
 		message: ""
 	});
 	const [currentMessage, setCurrentMessage] = React.useState(default_message);
 	const router = useRouter();
+	console.log(data.date);
 
 	function updateState<K extends keyof FormOutput>(key: K, value: FormOutput[K]) {
 		setData({ ...data, [key]: value });
@@ -158,8 +160,8 @@ export function ConsultationForm(props: { services: string[] }) {
 						/>
 						<p className={`small-text text-right text-area-text ${(data.message.length >= brandSettings.consultation.textarea.min && data.message.length <= brandSettings.consultation.textarea.max) ? 'good' : 'bad'}`}>{data.message.length} / {brandSettings.consultation.textarea.max}</p>
 					</div>
-					<p className="small-text">*{brandSettings.consultation.messages.error[0]}</p>
-					<Button onClick={submit} text="Submit Your Form!" />
+					<p className="small-text">{brandSettings.consultation.messages.error[0]}</p>
+					<Button className="m-width-fill" onClick={submit} text="Submit Your Form!" />
 				</form>
 			</div>
 		</div>

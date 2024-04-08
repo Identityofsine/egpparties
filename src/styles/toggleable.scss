@@ -1,3 +1,5 @@
+@import '../app/scss_lib/breakpoints.scss';
+
 .toggle {
 	$speed: 150ms;
 	position: relative;
@@ -12,6 +14,11 @@
 	gap: .7rem;
 	cursor: pointer;
 	transition: all $speed linear;
+
+	@include onMobile() {
+		min-height: 1rem;
+		padding: .105rem .55rem;
+	}
 
 	@keyframes toggle {
 		0% {
