@@ -1,27 +1,48 @@
 .carousel-item {
+	position: relative;
 	width: 8.2133rem;
 	height: 4.8000rem;
 	aspect-ratio: 1.7111;
+	transition: transform 0.5s;
+	z-index: 1000;
 
 	img {
 		height: 100%;
 		width: 100%;
 		border-radius: var(--card-border-radius);
 	}
+
+	&:hover {
+		transform: scale(.95);
+	}
+
 }
 
 .carousel {
 	width: 100%;
 	max-width: var(--max-width);
-	overflow: hidden;
 
 	&-container {
+		height: 125%;
 		width: 100%;
 		display: flex;
 		gap: 0.2133rem;
 		height: fit-content;
-		overflow: hidden;
+		overflow-x: hidden;
 	}
+
+	&-subcontainer {
+		width: 100%;
+		display: flex;
+
+		gap: 0.2133rem;
+
+		&.pause {
+			animation-play-state: paused;
+
+		}
+	}
+
 
 	&-item {
 		flex: 0 0 auto;

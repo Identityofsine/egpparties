@@ -37,7 +37,7 @@
 	--white-filter: invert(83%) sepia(99%) saturate(2%) hue-rotate(43deg) brightness(108%) contrast(100%);
 	font-size: 75px;
 
-	@include media('>=desktop') {
+	@include media('>=LGdesktop') {
 		font-size: 75px;
 	}
 
