@@ -6,6 +6,8 @@ export type EmailRequest = {
 	user_email: string;
 	user_number: string;
 	user_message: string;
+	user_event_date?: string;
+	user_event_location: string;
 	user_services: string[];
 };
 

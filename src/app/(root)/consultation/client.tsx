@@ -44,19 +44,28 @@ export function ConsultationForm(props: { services: string[] }) {
 		message: ""
 	});
 	const [currentMessage, setCurrentMessage] = React.useState(default_message);
+	const [loading, setLoading] = React.useState(false);
+
 	const router = useRouter();
+
+	useEffect(() => {
+		if (!loading) {
+			router.push('#message-box');
+		}
+	}, [loading]);
 
 	function updateState<K extends keyof FormOutput>(key: K, value: FormOutput[K]) {
 		setData({ ...data, [key]: value });
 	}
 
 	function submit() {
-		console.log(data);
+		setLoading(true);
 		let valid = true;
 		let missing: string[] = [];
 		Object.keys(data).forEach(key => {
 			key = key as keyof FormOutput;
 			if (!data[key as keyof FormOutput]) {
+				if (key === 'date' || key === 'location') return;
 				valid = false;
 				missing.push(key.charAt(0).toUpperCase() + key.slice(1));
 			}
@@ -72,25 +81,26 @@ export function ConsultationForm(props: { services: string[] }) {
 				valid = false;
 				missing.push('Message');
 			}
+
 		})
 		if (!valid) {
 			setCurrentMessage(`${brandSettings.consultation.messages.error[400]}: Fix ${missing.join(", ")}`);
+			setLoading(false);
 		} else {
-			sendConsultationEmail.client({ user_name: data.name, user_email: data.email, user_number: data.phone, user_message: data.message, user_services: data.service }).then((data: any) => {
-				console.log("success");
+			sendConsultationEmail.client({ user_name: data.name, user_email: data.email, user_number: data.phone, user_message: data.message, user_event_date: data.date, user_event_location: data.location, user_services: data.service }).then((data: any) => {
 				if (data.status === 200) {
 					setCurrentMessage(brandSettings.consultation.messages.success);
 				}
 			}).catch((e: any) => {
-				console.log(e);
 				if (e.response.status === 400) {
 					setCurrentMessage(brandSettings.consultation.messages.error[400] + `(${e.response.data.message.message})`);
 				} else if (e.response.status === 500) {
 					setCurrentMessage(brandSettings.consultation.messages.error[500]);
 				}
+			}).finally(() => {
+				setLoading(false);
 			});
 		}
-		router.push('#message-box');
 	}
 
 	return (
@@ -135,7 +145,7 @@ export function ConsultationForm(props: { services: string[] }) {
 						/>
 					</div>
 					<div className="flex column label-gap">
-						<label htmlFor="calender">*When (Is Your Event?):</label>
+						<label htmlFor="calender">When (Is Your Event?):</label>
 						<Input
 							type="date"
 							id="calender"
@@ -144,7 +154,7 @@ export function ConsultationForm(props: { services: string[] }) {
 						/>
 					</div>
 					<div className="flex column label-gap">
-						<label htmlFor="Event">*Event Location:</label>
+						<label htmlFor="Event">Event Location:</label>
 						<Input
 							type="text"
 							id="location"
