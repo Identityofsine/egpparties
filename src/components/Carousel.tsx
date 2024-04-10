@@ -2,6 +2,8 @@
 import React from 'react';
 import '../styles/carousel.scss';
 import { on } from 'events';
+import useViewPort from '@/hook/useViewPort';
+import useIsMobile from '@/hook/isMobile';
 
 type CarouselItemProps = {
 	img: string;
@@ -26,13 +28,17 @@ export function Carousel({ className, children }: CarouselProps) {
 	const [pause, setPause] = React.useState(false);
 	const ref = React.useRef<HTMLDivElement>(null);
 	const animation = React.useRef<Animation>();
+	const { width } = useViewPort();
+	const mobile = useIsMobile();
 
 	React.useEffect(() => {
 		if (!ref.current) return;
+		if (animation.current) animation.current.cancel();
 		const [keyframes, settings] = getKeyframe();
 		if (!keyframes || !settings) return;
 		animation.current = ref.current.animate(keyframes, settings);
-	}, [ref]);
+		return () => animation.current?.cancel();
+	}, [ref, width]);
 
 	React.useEffect(() => {
 		if (pause) animation.current?.pause();
@@ -52,7 +58,7 @@ export function Carousel({ className, children }: CarouselProps) {
 			{ transform: `translateX(-${(child_width + child_gap) * container.children.length / 2}px)` }
 		]
 		const animation_options: KeyframeAnimationOptions = {
-			duration: 5000,
+			duration: 10000,
 			iterations: Infinity,
 			easing: 'linear'
 		}
@@ -61,7 +67,7 @@ export function Carousel({ className, children }: CarouselProps) {
 
 	return (
 		<div className={"carousel " + className}>
-			<div className="carousel-container" dataset-value="0" onMouseEnter={() => setPause(true)} onMouseLeave={() => setPause(false)}>
+			<div className="carousel-container" dataset-value="0" onMouseEnter={() => !mobile && setPause(true)} onMouseLeave={() => !mobile && setPause(false)}>
 				<div className={`carousel-subcontainer ${pause ? "pause" : ""}`} ref={ref}>
 					{children}
 					{children}
