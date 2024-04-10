@@ -35,8 +35,8 @@ const companyItems: ListItem[] =
 	]
 
 const servicesItems: ListItem[] = [
-	{ name: 'Photography', url: "/photography" },
-	{ name: 'Videography', url: "/videography" },
+	{ name: 'Photography', url: "/services/photography" },
+	{ name: 'DJ', url: "/about#dj" },
 ]
 
 export function Footer() {

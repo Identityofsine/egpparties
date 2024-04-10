@@ -17,21 +17,26 @@ export default function AboutPage() {
 					<img className="m-width-fill m-max-width" src="/images/about-3.png" alt="About 3" />
 				</div>
 			</section>
-			<section className="dj">
-				<h4>Our DJ.</h4>
+			<section className="dj" id="dj">
+				<h4>The Best DJing On Long Island</h4>
 				<div className="flex container fill-width margin-top-04 m-flex-column gap-03">
 					<div className="flex column left">
 						<img src="/images/about-6.jpg" alt="About 6" />
 						<p className="margin-top-02 m-margin-top-03">
 						</p>
 					</div>
-					<div className="flex column right">
-						<h2>We bring the fun</h2>
-						<p className="margin-top-02">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget augue ut felis venenatis ullamcorper. Pellentesque neque metus, suscipit at bibendum vel, tempus at mi. Donec gravida pellentesque ante, tempor luctus nisi imperdiet et. Maecenas tempor eu lacus id lacinia. Curabitur vel lectus dui. Sed quis sem est. Aenean varius dapibus aliquam.
+					<div className="flex column right gap-01">
+						<h2>Our DJing Service</h2>
+						<p className="">
+							Welcome to EGP Entertainment, the premier DJ service on Long Island. With a proven track record of hosting hundreds of electrifying parties, weddings, and corporate events, we’re known for delivering unforgettable experiences tailored for your preferences.
+						</p>
+						<p className="">
+							Our team of expert DJs not only spin the hottest tracks but also offers MC services, ensuring seamless transitions and keeping the energy high throughout your event. Get Ready to elevate your celebration with EGP Entertainment - where music meets excellence.
 						</p>
 						<div className="flex column fill-width m-margin-top-05">
-							<Button className="margin-top-04 m-width-fill" primary={true} text="Book Us as a DJ" />
+							<a href={brandSettings.path + "consultation?services=DJ"}>
+								<Button className="margin-top-04 m-width-fill" primary={true} text="Book Us as a DJ" />
+							</a>
 						</div>
 					</div>
 

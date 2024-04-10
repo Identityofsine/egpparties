@@ -1,3 +1,4 @@
+import brandSettings from '@/app/brand.settings';
 import Button from '@/components/Button';
 import { GradientCard } from '@/components/GradientCard';
 import '@/styles/pages/photography.scss';
@@ -72,7 +73,12 @@ export default function PhotographyPage() {
 							<h2>DJ</h2>
 							<p>With a passion for music and a knack for reading the crowd, our DJs ensure an unforgettable experience, tailored to your unique vibe and style. Let the rhythm move you and the music take you on a journey with our professional DJ services.</p>
 							<div className="flex column gap-01 margin-top-06">
-								<Button className="m-width-fill" text="Book a DJ" primary={false} />
+								<a href={brandSettings.path + "about#dj"}>
+									<Button className="m-width-fill" text="Learn About Our DJ Process" primary={false} />
+								</a>
+								<a href={brandSettings.path + "consultation?services=DJ"}>
+									<Button className="m-width-fill" primary={true} text="Book a DJ" />
+								</a>
 							</div>
 						</div>
 					</div>
