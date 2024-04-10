@@ -1,5 +1,6 @@
 'use client';
 
+import sendConsultationEmail from "@/api/api.sendemail";
 import brandSettings from "@/app/brand.settings";
 import regexPatterns from "@/app/regex.settings";
 import Button from "@/components/Button";
@@ -75,6 +76,7 @@ export function ConsultationForm(props: { services: string[] }) {
 		if (!valid) {
 			setCurrentMessage(`${brandSettings.consultation.messages.error[400]}: Fix ${missing.join(", ")}`);
 		} else {
+			sendConsultationEmail.client({ user_name: data.name, user_email: data.email, user_number: data.phone, user_message: data.message, user_services: data.service });
 			setCurrentMessage(brandSettings.consultation.messages.success);
 		}
 		router.push('#message-box');

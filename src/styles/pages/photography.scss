@@ -52,7 +52,7 @@ main.photography {
 					&.m-text-mod {
 						@include onMobile() {
 							h5 {
-								font-size: .8rem !important;
+								font-size: .75rem !important;
 							}
 						}
 					}

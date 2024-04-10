@@ -28,7 +28,7 @@ export default function AboutPage() {
 					<div className="flex column right gap-01">
 						<h2>Our DJing Service</h2>
 						<p className="">
-							Welcome to EGP Entertainment, the premier DJ service on Long Island. With a proven track record of hosting hundreds of electrifying parties, weddings, and corporate events, we’re known for delivering unforgettable experiences tailored for your preferences.
+							Welcome to EGP Entertainment, the premier DJ service on Long Island. With a proven track record of hosting hundreds of electrifying parties, weddings, corporate events, aswell as countless childrens parties, we’re known for delivering unforgettable experiences tailored for your preferences.
 						</p>
 						<p className="">
 							Our team of expert DJs not only spin the hottest tracks but also offers MC services, ensuring seamless transitions and keeping the energy high throughout your event. Get Ready to elevate your celebration with EGP Entertainment - where music meets excellence.

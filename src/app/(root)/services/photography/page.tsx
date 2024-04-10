@@ -27,7 +27,8 @@ export default function PhotographyPage() {
 					</div>
 					<div className="flex fill-width flex-1 content heart-container m-flex-column" id="pep">
 						<div className="grid m-width-fill m-text-mod">
-							<GradientCard imgSrc="/images/photography-12.png" className="grid-item-1" title="Parties" />
+							<GradientCard imgSrc="/images/photography-12.png" className="" title="Parties" />
+							<GradientCard imgSrc="/images/photography-13.jpg" className="" title="Children" />
 							<GradientCard imgSrc="/images/photography-3.png" className="c4" title="Corporate Events" />
 							<GradientCard imgSrc="/images/photography-4.png" className="" title="Personal" />
 						</div>
