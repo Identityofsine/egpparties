@@ -14,7 +14,7 @@ const sendConsultationEmail = async (request: EmailRequest) => {
 	return response;
 }
 
-sendConsultationEmail.client = (request: EmailRequest) => {
+sendConsultationEmail.client = async (request: EmailRequest) => {
 	const response = axios.post('/api/', request);
 	return response;
 }

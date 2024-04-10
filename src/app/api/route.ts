@@ -10,8 +10,7 @@ export async function POST(req: Request) {
 		const body = await req.json() as EmailRequest;
 		//send email
 		const response = await sendConsultationEmail(body);
-		console.log(response);
-		return Response.json(response);
+		return Response.json(response, { status: response.status ?? 200 });
 	}
 	catch (e) {
 		return Response.json({ message: 'Local Request Failed.', status: 500 });

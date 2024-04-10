@@ -76,8 +76,19 @@ export function ConsultationForm(props: { services: string[] }) {
 		if (!valid) {
 			setCurrentMessage(`${brandSettings.consultation.messages.error[400]}: Fix ${missing.join(", ")}`);
 		} else {
-			sendConsultationEmail.client({ user_name: data.name, user_email: data.email, user_number: data.phone, user_message: data.message, user_services: data.service });
-			setCurrentMessage(brandSettings.consultation.messages.success);
+			sendConsultationEmail.client({ user_name: data.name, user_email: data.email, user_number: data.phone, user_message: data.message, user_services: data.service }).then((data: any) => {
+				console.log("success");
+				if (data.status === 200) {
+					setCurrentMessage(brandSettings.consultation.messages.success);
+				}
+			}).catch((e: any) => {
+				console.log(e);
+				if (e.response.status === 400) {
+					setCurrentMessage(brandSettings.consultation.messages.error[400] + `(${e.response.data.message.message})`);
+				} else if (e.response.status === 500) {
+					setCurrentMessage(brandSettings.consultation.messages.error[500]);
+				}
+			});
 		}
 		router.push('#message-box');
 	}
