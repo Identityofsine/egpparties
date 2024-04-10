@@ -50,7 +50,8 @@ export function ConsultationForm(props: { services: string[] }) {
 	const router = useRouter();
 
 	useEffect(() => {
-		router.push('#message-box');
+		if (currentMessage !== default_message)
+			router.push('#message-box');
 	}, [currentMessage]);
 
 	function updateState<K extends keyof FormOutput>(key: K, value: FormOutput[K]) {
@@ -106,7 +107,6 @@ export function ConsultationForm(props: { services: string[] }) {
 
 	return (
 		<div className="flex column center-margin container-father ">
-
 			{!done &&
 				<div className="container flex align-center">
 					<div className="text-message flex align-center" id="message-box">
