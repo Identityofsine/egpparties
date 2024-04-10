@@ -10,11 +10,13 @@ import brandSettings from '@/app/brand.settings';
 type ConsultationParams = {
 	searchParams: {
 		services: string | string[]
+		event: string
 	}
 }
 
 export default function Consultation(props: ConsultationParams) {
 	let services: string | string[] = props.searchParams.services;
+	let event: string = props.searchParams.event ?? "";
 	if (Array.isArray(services)) {
 		services.map(service => (
 			brandSettings.consultation.services.findIndex(s => s === service) !== -1
@@ -35,7 +37,7 @@ export default function Consultation(props: ConsultationParams) {
 			<h4>Get An Estimate</h4>
 			<p>Get in touch - Let’s Create Timeless Memories Together.</p>
 			{/* @ts-ignore */}
-			<ConsultationForm services={services ?? []} />
+			<ConsultationForm services={services ?? []} event={event} />
 		</main>
 	)
 }

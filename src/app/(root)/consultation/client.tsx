@@ -32,7 +32,7 @@ const toTens = (n: number) => {
 	return n < 10 ? `0${n}` : `${n}`
 }
 
-export function ConsultationForm(props: { services: string[] }) {
+export function ConsultationForm(props: { services: string[], event: string }) {
 
 	const [data, setData] = React.useState<FormOutput>({
 		name: "",
@@ -41,7 +41,7 @@ export function ConsultationForm(props: { services: string[] }) {
 		date: `${date.getFullYear()}-${toTens(date.getMonth())}-${toTens(date.getDate())}`,
 		location: "",
 		service: props.services,
-		message: ""
+		message: props.event?.trim() !== "" ? `I am interested in booking for a ${props.event}` : "",
 	});
 	const [currentMessage, setCurrentMessage] = React.useState(default_message);
 	const [loading, setLoading] = React.useState(false);
@@ -178,7 +178,7 @@ export function ConsultationForm(props: { services: string[] }) {
 							onChange={(e) => updateState("location", e)}
 						/>
 					</div>
-					<div className="flex column label-gap">
+					<div className="flex column label-gap" id="service">
 						<label htmlFor="Event">Services:</label>
 						<div className="flex align-center gap-01 flex-wrap">
 							<Services
@@ -193,6 +193,7 @@ export function ConsultationForm(props: { services: string[] }) {
 						<TextArea
 							id="message"
 							placeholder="Your Message"
+							defaultValue={data.message}
 							onChange={(e) => updateState("message", e)}
 						/>
 						<p className={`small-text text-right text-area-text ${(data.message.length >= brandSettings.consultation.textarea.min && data.message.length <= brandSettings.consultation.textarea.max) ? 'good' : 'bad'}`}>{data.message.length} / {brandSettings.consultation.textarea.max}</p>

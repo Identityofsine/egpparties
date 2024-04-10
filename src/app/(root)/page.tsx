@@ -65,7 +65,7 @@ export default function LandingPage() {
 						<h3>We’ll do the picture taking while you can focus on making memories.</h3>
 					</div>
 					<a href={brandSettings.path + "services/photography"}>
-						<Button className="fill-width margin-top-03 margin-width m-width-fill" text="Learn More About Our Photography Methods " primary={false} />
+						<Button className="fill-width margin-top-03 margin-width m-width-fill" text="Learn More About Our Photography Methods" primary={false} />
 					</a>
 				</div>
 				<h3 className="center-text">&</h3>
@@ -81,7 +81,10 @@ export default function LandingPage() {
 						<img src="/images/wd-3.jpg" alt="Photography" />
 						<h3>All you have to do is dance the night away while we spin the tunes!</h3>
 					</div>
-					<Button className="fill-width margin-top-03 margin-width m-width-fill" text="Learn More About Our DJ" primary={false} />
+
+					<a href="/about#dj">
+						<Button className="fill-width margin-top-03 margin-width m-width-fill" text="Learn More About Our DJ" primary={false} />
+					</a>
 				</div>
 				<h3 className="center-text">&</h3>
 				<div className="flex column fill-width we-do-block we-do-block-2">
@@ -128,7 +131,6 @@ export default function LandingPage() {
 					<div className="flex column fill-width gap-01 margin-top-03 m-margin-top-12">
 						<Button className="m-width-fill" text="Contact Us" primary={true} />
 						<Button className="m-width-fill" text="Learn More About Our Photography Methods" primary={false} />
-						<Button className="m-width-fill" text="Learn More About Our Videography Methods" primary={false} />
 					</div>
 				</div>
 			</section>

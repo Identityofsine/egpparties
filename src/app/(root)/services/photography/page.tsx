@@ -20,8 +20,12 @@ export default function PhotographyPage() {
 							<h2>Heart to Heart Moments</h2>
 							<p>EGP Photography specializes in wedding services and capturing heart-to-heart moments.</p>
 							<div className="flex column gap-01 margin-top-06">
-								<Button className="m-width-fill" text="Book Photography For Your Wedding" primary={true} />
-								<Button className="m-width-fill" text="Contact Us Directly!" primary={true} />
+								<a href="/consultation" className="m-width-fill">
+									<Button className="m-width-fill" text="Book Photography For Your Wedding" primary={true} />
+								</a>
+								<a href="/contact" className="m-width-fill">
+									<Button className="m-width-fill" text="Contact Us Directly!" primary={true} />
+								</a>
 							</div>
 						</div>
 					</div>
@@ -36,10 +40,18 @@ export default function PhotographyPage() {
 							<h2>Capture the Fun</h2>
 							<p>At <b>EGP</b>, we love to party, but we also know the importance of preserving those moments through photography.</p>
 							<div className="flex column gap-01 margin-top-06">
-								<Button className="m-width-fill" text="Book Us For Your Party" primary={false} />
-								<Button className="m-width-fill" text="Book Us For Your Corporate Event" primary={false} />
-								<Button className="m-width-fill" text="Book Us For Your Next Personal Event" primary={false} />
-								<Button className="m-width-fill" text="Contact Us Directly!" primary={true} />
+								<a href="/consultation" className="m-width-fill">
+									<Button className="m-width-fill" text="Book Us For Your Party" primary={false} />
+								</a>
+								<a href="/consultation" className="m-width-fill">
+									<Button className="m-width-fill" text="Book Us For Your Corporate Event" primary={false} />
+								</a>
+								<a href="/consultation" className="m-width-fill">
+									<Button className="m-width-fill" text="Book Us For Your Next Personal Event" primary={false} />
+								</a>
+								<a href="/contact" className="m-width-fill">
+									<Button className="m-width-fill" text="Contact Us Directly!" primary={true} />
+								</a>
 							</div>
 						</div>
 					</div>
