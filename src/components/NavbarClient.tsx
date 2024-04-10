@@ -33,6 +33,9 @@ export default function MobileNavBar() {
 				<a href={brandSettings.path + "contact"} className="m-width-fill">
 					<Button primary={false} text={"Contact"} className="m-width-fill" />
 				</a>
+				<a href={brandSettings.path + "about"} className="m-width-fill">
+					<Button primary={false} text={"About"} className="m-width-fill" />
+				</a>
 				<a href={brandSettings.path + "consultation"} className="m-width-fill">
 					<Button primary={true} text={"Free Consultation"} className="m-width-fill" />
 				</a>

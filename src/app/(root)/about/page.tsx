@@ -30,8 +30,8 @@ export default function AboutPage() {
 						<p className="margin-top-02">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget augue ut felis venenatis ullamcorper. Pellentesque neque metus, suscipit at bibendum vel, tempus at mi. Donec gravida pellentesque ante, tempor luctus nisi imperdiet et. Maecenas tempor eu lacus id lacinia. Curabitur vel lectus dui. Sed quis sem est. Aenean varius dapibus aliquam.
 						</p>
-						<div className="flex column fill-width">
-							<Button className="margin-top-04" primary={true} text="Book Us as a DJ" />
+						<div className="flex column fill-width m-margin-top-05">
+							<Button className="margin-top-04 m-width-fill" primary={true} text="Book Us as a DJ" />
 						</div>
 					</div>
 
