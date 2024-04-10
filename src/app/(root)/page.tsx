@@ -16,8 +16,12 @@ export default function LandingPage() {
 						</div>
 						<p className="center-text">Whether It's a sweet 16, a wedding, a graduation, a family reunion, a bar mitzvah, a quinceanera, a communion, or any other special occasion - we will provide the service.</p>
 						<div className="flex row align-center gap-01 m-flex-column m-margin-top-08">
-							<Button text="Get A Free Consultation" />
-							<Button text="See Our Services" primary={false} />
+							<a href="/consultation">
+								<Button text="Get A Free Consultation" />
+							</a>
+							<a href="/services">
+								<Button text="See Our Services" primary={false} />
+							</a>
 						</div>
 					</div>
 					<Carousel className="m-margin-top-08 ">
@@ -45,7 +49,9 @@ export default function LandingPage() {
 						<p className="margin-top-02 m-margin-top-03">Unlock the Power of Visual Storytelling With Our Expert Videography Services</p>
 					</div>
 				</div>
-				<Button className="fill-width margin-top-07 m-center-margin m-margin-top-08 m-padding-left-08 m-width-fill" text="Learn More About Us" primary={false} />
+				<a href="/about">
+					<Button className="fill-width margin-top-07 m-center-margin m-margin-top-08 m-padding-left-08 m-width-fill" text="Learn More About Us" primary={false} />
+				</a>
 			</section>
 			<section className="fill-width margin-width we-do-section flex column">
 				<div className="flex column fill-width we-do-block we-do-block-1">
@@ -88,7 +94,6 @@ export default function LandingPage() {
 						<img src="/images/wd-3.png" alt="Photography" />
 						<h3>We will be sure to hit record for you.</h3>
 					</div>
-					<Button className="fill-width margin-top-03 margin-width m-width-fill" text="Learn More About Our Videography Methods " primary={false} />
 				</div>
 			</section>
 			<section className="fill-width margin-width events">
