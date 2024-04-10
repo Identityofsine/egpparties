@@ -40,13 +40,13 @@ export default function PhotographyPage() {
 							<h2>Capture the Fun</h2>
 							<p>At <b>EGP</b>, we love to party, but we also know the importance of preserving those moments through photography.</p>
 							<div className="flex column gap-01 margin-top-06">
-								<a href="/consultation" className="m-width-fill">
+								<a href="/consultation?event=Party" className="m-width-fill">
 									<Button className="m-width-fill" text="Book Us For Your Party" primary={false} />
 								</a>
-								<a href="/consultation" className="m-width-fill">
+								<a href="/consultation?event=Corporate Event" className="m-width-fill">
 									<Button className="m-width-fill" text="Book Us For Your Corporate Event" primary={false} />
 								</a>
-								<a href="/consultation" className="m-width-fill">
+								<a href="/consultation?event=Personal Event" className="m-width-fill">
 									<Button className="m-width-fill" text="Book Us For Your Next Personal Event" primary={false} />
 								</a>
 								<a href="/contact" className="m-width-fill">
@@ -61,7 +61,9 @@ export default function PhotographyPage() {
 							<h2>Immortalize Your Life</h2>
 							<p>From Corporate Gatherings to Personal Milestones and Family Celebrations: Every moment is worth capturing.</p>
 							<div className="flex column gap-01 margin-top-06">
-								<Button className="m-width-fill" text="Book a Photoshoot with Us" primary={false} />
+								<a href="/consultation?event=Family" className="m-width-fill">
+									<Button className="m-width-fill" text="Book a Photoshoot with Us" primary={false} />
+								</a>
 							</div>
 						</div>
 					</div>
@@ -76,7 +78,9 @@ export default function PhotographyPage() {
 							<h2>Photobooth</h2>
 							<p>Our Photobooths come alive with props for fun and unique captures.</p>
 							<div className="flex column gap-01 margin-top-06">
-								<Button className="m-width-fill" text="Get a Photobooth for Your Event" primary={false} />
+								<a href="/consultation?services=Photobooth#service" className="m-width-fill">
+									<Button className="m-width-fill" text="Get a Photobooth for Your Event" primary={false} />
+								</a>
 							</div>
 						</div>
 					</div>
@@ -89,7 +93,7 @@ export default function PhotographyPage() {
 								<a href={brandSettings.path + "about#dj"}>
 									<Button className="m-width-fill" text="Learn About Our DJ Process" primary={false} />
 								</a>
-								<a href={brandSettings.path + "consultation?services=DJ"}>
+								<a href={brandSettings.path + "consultation?services=DJ#service"}>
 									<Button className="m-width-fill" primary={true} text="Book a DJ" />
 								</a>
 							</div>
@@ -105,7 +109,10 @@ export default function PhotographyPage() {
 							<h2>Party Add-Ons</h2>
 							<p>Add a splash of color with our vibrant face painting, indulge in classic carnival treats with our popcorn and cotton candy stations. These delightful additions are sure to bring smiles to faces of all ages and create unforgettable moments at your eve.</p>
 							<div className="flex column gap-01 margin-top-06 m-width-fill">
-								<Button text="Book a Party Add-On" primary={false} />
+
+								<a href={brandSettings.path + "consultation?services=Party Add-Ons#service"}>
+									<Button text="Book a Party Add-On" primary={false} />
+								</a>
 							</div>
 						</div>
 					</div>
@@ -115,7 +122,9 @@ export default function PhotographyPage() {
 							<h2>Dream-like Angles</h2>
 							<p>We elevate memories and enhance celebrations with aerial perspectives: using drones for both videography and photography.</p>
 							<div className="flex column gap-01 margin-top-06">
-								<Button className="m-width-fill" text="Book a Drone" primary={false} />
+								<a href={brandSettings.path + "consultation?services=Drone Shots#service"}>
+									<Button className="m-width-fill" text="Book a Drone" primary={false} />
+								</a>
 							</div>
 						</div>
 					</div>
@@ -125,7 +134,9 @@ export default function PhotographyPage() {
 							<h2>Dream-like Angles</h2>
 							<p>We elevate memories and enhance celebrations with aerial perspectives: using drones for both videography and photography.</p>
 							<div className="flex column gap-01 margin-top-06 m-width-fill">
-								<Button text="Book a Drone" primary={false} />
+								<a href={brandSettings.path + "consultation?services=Printing#service"}>
+									<Button text="Get Printings" primary={false} />
+								</a>
 							</div>
 						</div>
 					</div>
