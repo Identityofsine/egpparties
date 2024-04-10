@@ -61,7 +61,7 @@ export default function PhotographyPage() {
 							<h2>Immortalize Your Life</h2>
 							<p>From Corporate Gatherings to Personal Milestones and Family Celebrations: Every moment is worth capturing.</p>
 							<div className="flex column gap-01 margin-top-06">
-								<a href="/consultation?event=Family" className="m-width-fill">
+								<a href="/consultation?event=Family Photoshoot" className="m-width-fill">
 									<Button className="m-width-fill" text="Book a Photoshoot with Us" primary={false} />
 								</a>
 							</div>

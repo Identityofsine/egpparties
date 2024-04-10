@@ -41,11 +41,11 @@ export default function LandingPage() {
 						<p className="margin-top-02 m-margin-top-03">Trusted by Suffolk County Police and Bethpage Federal Credit Union, among many others!</p>
 					</div>
 					<div className="card-container">
-						<GradientCard className="expert" imgSrc="/images/c-2.png" title="1000s of Photos" />
+						<GradientCard className="expert" imgSrc="/images/c-2.png" title="1000s of Photos" style={{ objectPosition: '50% 15%' }} />
 						<p className="margin-top-02 m-margin-top-03">Countless Memories Perserved.</p>
 					</div>
 					<div className="card-container">
-						<GradientCard className="expert" imgSrc="/images/c-3.png" title="Hours of Video" />
+						<GradientCard className="expert" imgSrc="/images/c-3.png" title="Hours of Video" style={{ objectPosition: '50% 15%' }} />
 						<p className="margin-top-02 m-margin-top-03">Unlock the Power of Visual Storytelling With Our Expert Videography Services</p>
 					</div>
 				</div>
@@ -61,7 +61,7 @@ export default function LandingPage() {
 					</div>
 					<div className="photo-container flex column">
 						<h3>So,</h3>
-						<img src="/images/wd-1.png" alt="Photography" />
+						<img src="/images/wd-1.png" alt="Photography" style={{ objectPosition: '50% 12%' }} />
 						<h3>We’ll do the picture taking while you can focus on making memories.</h3>
 					</div>
 					<a href={brandSettings.path + "services/photography"}>
@@ -78,10 +78,9 @@ export default function LandingPage() {
 					</div>
 					<div className="photo-container flex column">
 						<h3>So,</h3>
-						<img src="/images/wd-3.jpg" alt="Photography" />
+						<img src="/images/wd-3.jpg" alt="Photography" style={{ objectPosition: '50% 65%' }} />
 						<h3>All you have to do is dance the night away while we spin the tunes!</h3>
 					</div>
-
 					<a href="/about#dj">
 						<Button className="fill-width margin-top-03 margin-width m-width-fill" text="Learn More About Our DJ" primary={false} />
 					</a>
@@ -94,7 +93,7 @@ export default function LandingPage() {
 					</div>
 					<div className="photo-container flex column">
 						<h3>Then,</h3>
-						<img src="/images/wd-3.png" alt="Photography" />
+						<img src="/images/wd-3.png" alt="Videography" style={{ objectPosition: '50% 25%' }} />
 						<h3>We will be sure to hit record for you.</h3>
 					</div>
 				</div>
@@ -121,16 +120,20 @@ export default function LandingPage() {
 						</a>
 						<div className="flex column fill-height event-flex ">
 							<a href={brandSettings.path + 'services/photography#family'} className="event event-5 fill-height">
-								<GradientCard className="event event-5 c3 fill-height" imgSrc="/images/wwd-5.png" title="Family" />
+								<GradientCard className="event event-5 c3 fill-height" imgSrc="/images/wwd-5.png" title="Family" style={{ objectPosition: '50% 8%' }} />
 							</a>
 							<a href={brandSettings.path + 'services/photography#pep'} className="event event-6 fill-height">
-								<GradientCard className="event event-5 c3 fill-height" imgSrc="/images/wwd-6.png" title="Personal" />
+								<GradientCard className="event event-5 c3 fill-height" imgSrc="/images/wwd-6.png" title="Personal" style={{ objectPosition: '50% 0%' }} />
 							</a>
 						</div>
 					</div>
 					<div className="flex column fill-width gap-01 margin-top-03 m-margin-top-12">
-						<Button className="m-width-fill" text="Contact Us" primary={true} />
-						<Button className="m-width-fill" text="Learn More About Our Photography Methods" primary={false} />
+						<a href={brandSettings.path + 'contact'}>
+							<Button className="m-width-fill" text="Contact Us" primary={true} />
+						</a>
+						<a href={brandSettings.path + 'services/photography'}>
+							<Button className="m-width-fill" text="Learn More About Our Photography Methods" primary={false} />
+						</a>
 					</div>
 				</div>
 			</section>
