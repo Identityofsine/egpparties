@@ -3,7 +3,7 @@
 footer {
 	position: relative;
 	margin-top: auto;
-	height: 6.2667rem;
+	min-height: 6.2667rem;
 	padding-top: 0.7733rem;
 	padding-bottom: 0.5067rem;
 	background: #fff;
@@ -23,7 +23,7 @@ footer {
 
 	.content {
 		width: var(--margin-width);
-		height: 4.9867rem;
+		min-height: 4.9867rem;
 
 		p {
 			color: black;

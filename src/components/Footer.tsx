@@ -25,10 +25,14 @@ function List({ title, items }: { items: ListItem[], title: string }) {
 	)
 }
 
-const companyItems: ListItem[] = [
-	{ name: 'About Us', url: "/about" },
-	{ name: 'Twitter', url: "" },
-]
+//@ts-ignore
+const companyItems: ListItem[] =
+	[
+		{ name: 'About Us', url: "/about" },
+		,
+		...(Object?.keys(brandSettings.socials)?.map(
+			(item, index) => ({ name: (item.charAt(0).toUpperCase()).concat(item.slice(1)), url: "" }))) ?? []
+	]
 
 const servicesItems: ListItem[] = [
 	{ name: 'Photography', url: "/photography" },

@@ -4,6 +4,7 @@ import '../styles/carousel.scss';
 import { on } from 'events';
 import useViewPort from '@/hook/useViewPort';
 import useIsMobile from '@/hook/isMobile';
+import brandSettings from '@/app/brand.settings';
 
 type CarouselItemProps = {
 	img: string;
@@ -58,7 +59,7 @@ export function Carousel({ className, children }: CarouselProps) {
 			{ transform: `translateX(-${(child_width + child_gap) * container.children.length / 2}px)` }
 		]
 		const animation_options: KeyframeAnimationOptions = {
-			duration: 10000,
+			duration: brandSettings.landing.carouselSpeed * 1000,
 			iterations: Infinity,
 			easing: 'linear'
 		}

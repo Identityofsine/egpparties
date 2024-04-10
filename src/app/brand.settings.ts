@@ -6,16 +6,19 @@ const brandSettings = {
 	description: 'Key moments in our lives act as milestones, encapsulating cherished memories that define us.',
 	theme: 'light',
 	logo: '/icons/apature.svg',
+	landing: {
+		carouselSpeed: 12, //in seconds
+	},
 	contact: {
 		email: 'egpimages@gmail.com',
 		phone: '631-500-4189',
 	},
 	socials: {
-		twitter: 'https://twitter.com',
-		facebook: 'https://facebook.com',
-		instagram: 'https://instagram.com',
-		youtube: 'https://youtube.com',
-		tiktok: 'https://tiktok.com'
+		//twitter: 'https://twitter.com',
+		//facebook: 'https://facebook.com',
+		//instagram: 'https://instagram.com',
+		//youtube: 'https://youtube.com',
+		//tiktok: 'https://tiktok.com'
 	},
 	consultation: {
 		services: ["Photobooth", "Drone Shots", "Printing", "DJ", "Party Add-Ons"],
