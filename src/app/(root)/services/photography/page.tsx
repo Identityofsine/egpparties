@@ -20,7 +20,7 @@ export default function PhotographyPage() {
 							<h2>Heart to Heart Moments</h2>
 							<p>EGP Photography specializes in wedding services and capturing heart-to-heart moments.</p>
 							<div className="flex column gap-01 margin-top-06">
-								<a href="/consultation" className="m-width-fill">
+								<a href="/consultation?event=Wedding" className="m-width-fill">
 									<Button className="m-width-fill" text="Book Photography For Your Wedding" primary={true} />
 								</a>
 								<a href="/contact" className="m-width-fill">

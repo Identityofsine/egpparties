@@ -7,6 +7,7 @@
     "dev-2": "next dev -H 192.168.1.8",
     "build": "next build",
     "start": "next start",
+    "start-2": "next start -H 192.168.1.8",
     "lint": "next lint"
   },
   "dependencies": {

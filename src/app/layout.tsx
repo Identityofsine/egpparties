@@ -12,7 +12,6 @@ export const metadata: Metadata = {
 	description: "Key moments in our lives act as milestones, encapsulating cherished memories that define us.",
 	twitter: {
 		title: "Exquisite Gallery Photography",
-
 	}
 };
 
