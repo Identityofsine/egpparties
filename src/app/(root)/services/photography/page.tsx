@@ -70,7 +70,7 @@ export default function PhotographyPage() {
 						<GradientCard imgSrc="/images/photography-6.png" className="custom-dj c5 m-width-fill" />
 						<div className="flex column flex-1">
 							<h2>DJ</h2>
-							<p>Our Photobooths come alive with props for fun and unique captures.</p>
+							<p>With a passion for music and a knack for reading the crowd, our DJs ensure an unforgettable experience, tailored to your unique vibe and style. Let the rhythm move you and the music take you on a journey with our professional DJ services.</p>
 							<div className="flex column gap-01 margin-top-06">
 								<Button className="m-width-fill" text="Book a DJ" primary={false} />
 							</div>
@@ -84,9 +84,9 @@ export default function PhotographyPage() {
 						</div>
 						<div className="flex column flex-1">
 							<h2>Party Add-Ons</h2>
-							<p>Our Photobooths come alive with props for fun and unique captures.</p>
+							<p>Add a splash of color with our vibrant face painting, indulge in classic carnival treats with our popcorn and cotton candy stations. These delightful additions are sure to bring smiles to faces of all ages and create unforgettable moments at your eve.</p>
 							<div className="flex column gap-01 margin-top-06 m-width-fill">
-								<Button text="Get a Photobooth for Your Event" primary={false} />
+								<Button text="Book a Party Add-On" primary={false} />
 							</div>
 						</div>
 					</div>

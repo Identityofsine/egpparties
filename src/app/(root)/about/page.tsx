@@ -17,6 +17,26 @@ export default function AboutPage() {
 					<img className="m-width-fill m-max-width" src="/images/about-3.png" alt="About 3" />
 				</div>
 			</section>
+			<section className="dj">
+				<h4>Our DJ.</h4>
+				<div className="flex container fill-width margin-top-04 m-flex-column gap-03">
+					<div className="flex column left">
+						<img src="/images/about-6.jpg" alt="About 6" />
+						<p className="margin-top-02 m-margin-top-03">
+						</p>
+					</div>
+					<div className="flex column right">
+						<h2>We bring the fun</h2>
+						<p className="margin-top-02">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget augue ut felis venenatis ullamcorper. Pellentesque neque metus, suscipit at bibendum vel, tempus at mi. Donec gravida pellentesque ante, tempor luctus nisi imperdiet et. Maecenas tempor eu lacus id lacinia. Curabitur vel lectus dui. Sed quis sem est. Aenean varius dapibus aliquam.
+						</p>
+						<div className="flex column fill-width">
+							<Button className="margin-top-04" primary={true} text="Book Us as a DJ" />
+						</div>
+					</div>
+
+				</div>
+			</section>
 			<section className="based-in">
 				<h2>Based In Long Island, New York</h2>
 				<p className="margin-top-01 m-margin-top-03"><b>Exquisite Gallery Photography</b> extends its artistry and dedication to clients throughout the entirety of the Empire State. From the vibrant streets of New York City to the serene shores of Long Island, our passion for capturing the beauty of life knows no bounds.</p>
