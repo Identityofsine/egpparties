@@ -19,7 +19,7 @@ export default function AboutPage() {
 			</section>
 			<section className="dj" id="dj">
 				<h4>The Best DJing On Long Island</h4>
-				<div className="flex container fill-width margin-top-04 m-flex-column gap-03">
+				<div className="flex container fill-width margin-top-07 m-flex-column gap-03">
 					<div className="flex column left">
 						<img src="/images/about-6.jpg" alt="About 6" />
 						<p className="margin-top-02 m-margin-top-03">
@@ -27,7 +27,7 @@ export default function AboutPage() {
 					</div>
 					<div className="flex column right gap-01">
 						<h2>Our DJing Service</h2>
-						<p className="">
+						<p className="margin-top-01">
 							Welcome to EGP Entertainment, the premier DJ service on Long Island. With a proven track record of hosting hundreds of electrifying parties, weddings, corporate events, aswell as countless childrens parties, we’re known for delivering unforgettable experiences tailored for your preferences.
 						</p>
 						<p className="">

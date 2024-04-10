@@ -45,14 +45,13 @@ export function ConsultationForm(props: { services: string[] }) {
 	});
 	const [currentMessage, setCurrentMessage] = React.useState(default_message);
 	const [loading, setLoading] = React.useState(false);
+	const [done, setDone] = React.useState(false);
 
 	const router = useRouter();
 
 	useEffect(() => {
-		if (!loading) {
-			router.push('#message-box');
-		}
-	}, [loading]);
+		router.push('#message-box');
+	}, [currentMessage]);
 
 	function updateState<K extends keyof FormOutput>(key: K, value: FormOutput[K]) {
 		setData({ ...data, [key]: value });
@@ -60,6 +59,7 @@ export function ConsultationForm(props: { services: string[] }) {
 
 	function submit() {
 		setLoading(true);
+		setCurrentMessage(``);
 		let valid = true;
 		let missing: string[] = [];
 		Object.keys(data).forEach(key => {
@@ -90,6 +90,7 @@ export function ConsultationForm(props: { services: string[] }) {
 			sendConsultationEmail.client({ user_name: data.name, user_email: data.email, user_number: data.phone, user_message: data.message, user_event_date: data.date, user_event_location: data.location, user_services: data.service }).then((data: any) => {
 				if (data.status === 200) {
 					setCurrentMessage(brandSettings.consultation.messages.success);
+					setDone(true);
 				}
 			}).catch((e: any) => {
 				if (e.response.status === 400) {
@@ -105,14 +106,29 @@ export function ConsultationForm(props: { services: string[] }) {
 
 	return (
 		<div className="flex column center-margin container-father ">
-			<div className="container flex align-center">
-				<div className="text-message flex align-center" id="message-box">
-					<img src="/icons/chat-bubble.svg" alt="consultation" />
-					<p>{currentMessage}</p>
+
+			{!done &&
+				<div className="container flex align-center">
+					<div className="text-message flex align-center" id="message-box">
+						<img src="/icons/chat-bubble.svg" alt="consultation" />
+						<p>{currentMessage}</p>
+					</div>
 				</div>
-			</div>
+			}
 			<div className="container flex column justify-center">
-				<form className="flex column">
+				<form className={`flex column relative ${(loading || done) ? "shrink" : ""}`}>
+					{loading &&
+						<div className="loader fill-width fill-height flex column center-flex gap-02">
+							<img src="/icons/globe-earth.gif" alt="loading" />
+							<p className="center-text">Loading...</p>
+						</div>
+					}
+					{done &&
+						<div className="loader fill-width fill-height flex column center-flex gap-02">
+							<img src="/icons/verified.gif" alt="verified" />
+							<p className="center-text">{currentMessage}</p>
+						</div>
+					}
 					<div className="flex column label-gap">
 						<label htmlFor="name">*Name:</label>
 						<Input

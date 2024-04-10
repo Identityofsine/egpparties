@@ -22,6 +22,41 @@ main.consultation {
 		border-radius: 11px;
 		border: 1.05px solid var(--border-color);
 
+		.loader {
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			background: #ffffff;
+			z-index: 10;
+
+			img {
+				$dimension: 3rem;
+				width: $dimension;
+				height: $dimension;
+			}
+
+			p {
+				font-size: .6rem;
+				font-weight: 500;
+				line-height: 1;
+				padding: 0 1rem;
+			}
+		}
+
+		form {
+			max-height: 50rem;
+			transition: max-height 0.5s ease-in-out;
+
+			&.shrink {
+				max-height: 12rem;
+				overflow: hidden;
+			}
+		}
+
 		.text-message {
 			padding-left: 0.4933rem;
 			padding-right: 0.5rem;
