@@ -9,12 +9,13 @@ import brandSettings from '@/app/brand.settings';
 type CarouselItemProps = {
 	img: string;
 	alt?: string;
+	style?: React.CSSProperties;
 }
 
-export function CarouselItem({ img, alt }: CarouselItemProps) {
+export function CarouselItem({ img, alt, style }: CarouselItemProps) {
 	return (
 		<div className="carousel-item">
-			<img src={img} alt={alt} />
+			<img src={img} alt={alt} style={style} />
 		</div>
 	)
 }

@@ -7,8 +7,8 @@ export default function AboutPage() {
 		<main className="about-page margin-width center-margin">
 			<section >
 				<div className="flex column title-block">
-					<h6>Exquisite Gallery Photography</h6>
-					<h3>Or EGP</h3>
+					<h6>{brandSettings.name}</h6>
+					<h3>Or {brandSettings.shortName}</h3>
 				</div>
 				<p className="margin-top-04">Key moments in our lives act as milestones, encapsulating cherished memories that define us.</p>
 				<div className="flex justify-between fill-width image-row margin-top-06 m-flex-column m-fill-width m-gap-10">
@@ -44,7 +44,7 @@ export default function AboutPage() {
 			</section>
 			<section className="based-in">
 				<h2>Based In Long Island, New York</h2>
-				<p className="margin-top-01 m-margin-top-03"><b>Exquisite Gallery Photography</b> extends its artistry and dedication to clients throughout the entirety of the Empire State. From the vibrant streets of New York City to the serene shores of Long Island, our passion for capturing the beauty of life knows no bounds.</p>
+				<p className="margin-top-01 m-margin-top-03"><b>{brandSettings.name}</b> extends its artistry and dedication to clients throughout the entirety of the Empire State. From the vibrant streets of New York City to the serene shores of Long Island, our passion for capturing the beauty of life knows no bounds.</p>
 				<img className="margin-top-04 m-margin-top-07" src="/images/about-4.png" alt="About 4" />
 			</section>
 			<section className="photography-to-us">
@@ -59,7 +59,7 @@ export default function AboutPage() {
 						<div className="sub-block">
 							<h2>We Never Want To Miss "It"</h2>
 							<p className="m-margin-top-02">
-								Whether “it” is the enchantment of a wedding celebration, the exuberance of a sweet 16 bash, the warmth of a birthday gathering, or any other special event that fills hearts with joy. At <b>Exquisite Gallery Photography</b>, we are committed to capturing every “it” moment with precision, passion and artistry, ensuring that your cherished memories last a lifetime.
+								Whether “it” is the enchantment of a wedding celebration, the exuberance of a sweet 16 bash, the warmth of a birthday gathering, or any other special event that fills hearts with joy. At <b>{brandSettings.name}</b>, we are committed to capturing every “it” moment with precision, passion and artistry, ensuring that your cherished memories last a lifetime.
 							</p>
 							<a href={brandSettings.path + "services/photography"}>
 								<Button className="margin-top-04" primary={false} text="Take a Look At How We Take Photos" />
@@ -72,12 +72,18 @@ export default function AboutPage() {
 			<section className="contact">
 				<h2 className="center-text">We Help You Never Forget.</h2>
 				<p className="center-text margin-top-02">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel urna porta nisi rutrum vulputate a id ex. Sed consequat gravida mi. Mauris ut augue auctor augue tempor condimentum. Duis porttitor lacinia massa vel tempus.
+					Capture memories that last a lifetime with our expert photography services. Contact us now to turn your moments into timeless treasures
 				</p>
 				<div className="flex column button-gap margin-top-06">
-					<Button className="m-width-fill" primary={true} text="Get A Free Consultation" />
-					<Button className="m-width-fill" primary={false} text="Contact Us Directly" />
-					<Button className="m-width-fill" primary={false} text="See Our Services" />
+					<a href="/consultation" className="m-width-fill">
+						<Button className="m-width-fill" primary={true} text="Get A Free Consultation" />
+					</a>
+					<a href="/contact" className="m-width-fill">
+						<Button className="m-width-fill" primary={false} text="Contact Us Directly" />
+					</a>
+					<a href="/services" className="m-width-fill">
+						<Button className="m-width-fill" primary={false} text="See Our Services" />
+					</a>
 				</div>
 			</section>
 		</main>

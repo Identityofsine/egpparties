@@ -4,11 +4,13 @@ import "./globals.scss";
 import { Footer } from "@/components/Footer";
 import dynamic from "next/dynamic";
 import { NavBar } from "../components/Navbar";
+import brandSettings from "./brand.settings";
 
 const inter = Inter({ subsets: ["latin"] });
 
+
 export const metadata: Metadata = {
-	title: "Exquisite Gallery Photography",
+	title: brandSettings.name,
 	description: "Key moments in our lives act as milestones, encapsulating cherished memories that define us.",
 	twitter: {
 		title: "Exquisite Gallery Photography",

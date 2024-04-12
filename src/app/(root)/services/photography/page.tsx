@@ -131,11 +131,11 @@ export default function PhotographyPage() {
 					<div className="flex fill-width flex-1 content content-gap m-flex-column" id="printing">
 						<GradientCard imgSrc="/images/photography-11.png" className="print c5 m-width-fill" />
 						<div className="flex column flex-1">
-							<h2>Dream-like Angles</h2>
-							<p>We elevate memories and enhance celebrations with aerial perspectives: using drones for both videography and photography.</p>
+							<h2>Printing</h2>
+							<p>Transforming digital memories into tangible keepsakes, we offer an affordable and convient printing service.</p>
 							<div className="flex column gap-01 margin-top-06 m-width-fill">
 								<a href={brandSettings.path + "consultation?services=Printing#service"}>
-									<Button text="Get Printings" primary={false} />
+									<Button text="Request Printing Services" primary={false} />
 								</a>
 							</div>
 						</div>

@@ -1,6 +1,6 @@
 const brandSettings = {
 	path: "/",
-	name: 'Exquisite Gallery Photography',
+	name: 'Euphoric Gathering Productions',
 	shortName: 'EGP',
 	llc: 'EGP. LLC',
 	description: 'Key moments in our lives act as milestones, encapsulating cherished memories that define us.',
@@ -12,6 +12,7 @@ const brandSettings = {
 	contact: {
 		email: 'egpimages@gmail.com',
 		phone: '631-500-4189',
+		phone_no: '6315004189',
 	},
 	socials: {
 		//twitter: 'https://twitter.com',
@@ -21,7 +22,7 @@ const brandSettings = {
 		//tiktok: 'https://tiktok.com'
 	},
 	consultation: {
-		services: ["Photobooth", "Drone Shots", "Printing", "DJ", "Party Add-Ons"],
+		services: ["Photography", "Photobooth", "Drone Shots", "Printing", "DJ", "Party Add-Ons"],
 		textarea: { min: 20, max: 500 },
 		messages: {
 			default: "Guaranteed Response Time of 24 Hours or Less!",

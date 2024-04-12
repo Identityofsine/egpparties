@@ -11,8 +11,8 @@ export default function LandingPage() {
 				<div className="flex column align-center gap-01">
 					<div className="margin-width flex column align-center gap-01">
 						<div className="flex column align-center title-block">
-							<h2 className="m-text-center">Capture Your Precious Moment.</h2>
-							<h3 className="m-text-center">We do it all - EGP is a one stop shop!</h3>
+							<h2 className="m-text-center text-center">Long Island's Best Party and Entertainment Company</h2>
+							<h3 className="m-text-center">We do it all - EGP is a one stop shop for all party events!</h3>
 						</div>
 						<p className="center-text">Whether It's a sweet 16, a wedding, a graduation, a family reunion, a bar mitzvah, a quinceanera, a communion, or any other special occasion - we will provide the service.</p>
 						<div className="flex row align-center gap-01 m-flex-column m-margin-top-08">
@@ -26,15 +26,15 @@ export default function LandingPage() {
 					</div>
 					<Carousel className="m-margin-top-08 ">
 						<CarouselItem img="/images/c-1.png" />
-						<CarouselItem img="/images/c-2.png" />
-						<CarouselItem img="/images/c-3.png" />
+						<CarouselItem img="/images/c-2.png" style={{ objectPosition: '80% 0%' }} />
+						<CarouselItem img="/images/c-3.png" style={{ objectPosition: '80% 0%' }} />
 						<CarouselItem img="/images/c-4.png" />
 					</Carousel>
 				</div>
 			</section>
 			<section className="flex column margin-width about-us fill-width ">
 				<h2 className="m-text-center">We have a team of experts dedicated to serving you!</h2>
-				<p className="text-left body-1 m-text-center">Our elite team of specialists masterfully immortalizes your moments with unparalled skill and finesse, going the extra mile to ensure customer satisfaction</p>
+				<p className="text-left body-1 m-text-center">Our elite team of specialists masterfully immortalizes your moments with unparalleled skill and finesse, going the extra mile to ensure customer satisfaction</p>
 				<div className="grid client-box m-center-margin m-grid-center">
 					<div className="card-container">
 						<GradientCard className="expert" imgSrc="/images/c-1.png" title="100s of Clients" />
@@ -78,7 +78,7 @@ export default function LandingPage() {
 					</div>
 					<div className="photo-container flex column">
 						<h3>So,</h3>
-						<img src="/images/wd-3.jpg" alt="Photography" style={{ objectPosition: '50% 65%' }} />
+						<img src="/images/wd-3.jpg" alt="Photography" style={{ objectPosition: '20% 38%' }} />
 						<h3>All you have to do is dance the night away while we spin the tunes!</h3>
 					</div>
 					<a href="/about#dj">
@@ -137,6 +137,6 @@ export default function LandingPage() {
 					</div>
 				</div>
 			</section>
-		</main>
+		</main >
 	)
 }
