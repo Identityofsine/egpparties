@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 	title: brandSettings.name,
 	description: "Key moments in our lives act as milestones, encapsulating cherished memories that define us.",
 	twitter: {
-		title: "Exquisite Gallery Photography",
+		title: brandSettings.name,
 	}
 };
 

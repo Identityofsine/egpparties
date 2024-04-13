@@ -12,9 +12,9 @@ export default function AboutPage() {
 				</div>
 				<p className="margin-top-04">Key moments in our lives act as milestones, encapsulating cherished memories that define us.</p>
 				<div className="flex justify-between fill-width image-row margin-top-06 m-flex-column m-fill-width m-gap-10">
-					<img className="m-width-fill m-max-width" src="/images/about-1.png" alt="About 1" />
-					<img className="m-width-fill m-max-width" src="/images/about-2.png" alt="About 2" />
-					<img className="m-width-fill m-max-width" src="/images/about-3.png" alt="About 3" />
+					<img className="m-width-fill m-max-width" src="/images/about-1.png.jpeg" alt="About 1" />
+					<img className="m-width-fill m-max-width" src="/images/about-2.png.jpeg" alt="About 2" />
+					<img className="m-width-fill m-max-width" src="/images/about-3.png.jpeg" alt="About 3" />
 				</div>
 			</section>
 			<section className="dj" id="dj">
@@ -45,7 +45,7 @@ export default function AboutPage() {
 			<section className="based-in">
 				<h2>Based In Long Island, New York</h2>
 				<p className="margin-top-01 m-margin-top-03"><b>{brandSettings.name}</b> extends its artistry and dedication to clients throughout the entirety of the Empire State. From the vibrant streets of New York City to the serene shores of Long Island, our passion for capturing the beauty of life knows no bounds.</p>
-				<img className="margin-top-04 m-margin-top-07" src="/images/about-4.png" alt="About 4" />
+				<img className="margin-top-04 m-margin-top-07" src="/images/about-4.png.jpeg" alt="About 4" />
 			</section>
 			<section className="photography-to-us">
 				<h4>
@@ -66,7 +66,7 @@ export default function AboutPage() {
 							</a>
 						</div>
 					</div>
-					<img className="right" src="/images/about-5.png" alt="About 5" />
+					<img className="right" src="/images/about-5.png.jpeg" alt="About 5" />
 				</div>
 			</section>
 			<section className="contact">

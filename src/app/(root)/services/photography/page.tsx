@@ -9,13 +9,13 @@ export default function PhotographyPage() {
 			<section className="first fill-width">
 				<h2>A Picture Is Worth One Thousand Words</h2>
 				<p>Let Us Tell Your Story Through Captivating Visuals</p>
-				<img src="/images/photography-1.png" alt="Photography" />
+				<img src="/images/photography-1.png.jpeg" alt="Photography" />
 			</section>
 			<section className="what-we-do fill-width">
 				<h1 className="text-left fill-width">So,<br />Here's What We Do.</h1>
 				<div className="flex column gap margin-top-06">
 					<div className="flex fill-width flex-1 content heart-container m-flex-column" id="wedding">
-						<GradientCard imgSrc="/images/photography-2.png" className="full c5 m-width-fill" title="Weddings" />
+						<GradientCard imgSrc="/images/photography-2.png.jpeg" className="full c5 m-width-fill" title="Weddings" />
 						<div className="flex column flex-1">
 							<h2>Heart to Heart Moments</h2>
 							<p>EGP Photography specializes in wedding services and capturing heart-to-heart moments.</p>
@@ -31,10 +31,10 @@ export default function PhotographyPage() {
 					</div>
 					<div className="flex fill-width flex-1 content heart-container m-flex-column" id="pep">
 						<div className="grid m-width-fill m-text-mod">
-							<GradientCard imgSrc="/images/photography-12.png" className="" title="Parties" />
+							<GradientCard imgSrc="/images/photography-12.png.jpeg" className="" title="Parties" />
 							<GradientCard imgSrc="/images/photography-13.jpg" className="" title="Children" />
-							<GradientCard imgSrc="/images/photography-3.png" className="c4" title="Corporate Events" />
-							<GradientCard imgSrc="/images/photography-4.png" className="" title="Personal" />
+							<GradientCard imgSrc="/images/photography-3.png.jpeg" className="c4" title="Corporate Events" />
+							<GradientCard imgSrc="/images/photography-4.png.jpeg" className="" title="Personal" />
 						</div>
 						<div className="flex column flex-1">
 							<h2>Capture the Fun</h2>
@@ -56,7 +56,7 @@ export default function PhotographyPage() {
 						</div>
 					</div>
 					<div className="flex fill-width flex-1 content heart-container m-flex-column" id="family">
-						<GradientCard imgSrc="/images/wwd-5.png" className="full c2 m-width-fill" title="Family" />
+						<GradientCard imgSrc="/images/wwd-5.png.jpeg" className="full c2 m-width-fill" title="Family" />
 						<div className="flex column flex-1">
 							<h2>Immortalize Your Life</h2>
 							<p>From Corporate Gatherings to Personal Milestones and Family Celebrations: Every moment is worth capturing.</p>
@@ -73,7 +73,7 @@ export default function PhotographyPage() {
 				<h6>Here’s What We Can Bring</h6>
 				<div className="flex column first-container margin-top-06">
 					<div className="flex fill-width flex-1 content content-gap m-flex-column" id="photobooth">
-						<GradientCard imgSrc="/images/photography-5.png" className="custom-photobooth c5 m-width-fill" />
+						<GradientCard imgSrc="/images/photography-5.png.jpeg" className="custom-photobooth c5 m-width-fill" />
 						<div className="flex column flex-1">
 							<h2>Photobooth</h2>
 							<p>Our Photobooths come alive with props for fun and unique captures.</p>
@@ -85,7 +85,7 @@ export default function PhotographyPage() {
 						</div>
 					</div>
 					<div className="flex fill-width flex-1 content content-gap m-flex-column" id="dj">
-						<GradientCard imgSrc="/images/photography-6.png" className="custom-dj c5 m-width-fill" />
+						<GradientCard imgSrc="/images/photography-6.png.jpeg" className="custom-dj c5 m-width-fill" />
 						<div className="flex column flex-1">
 							<h2>DJ</h2>
 							<p>With a passion for music and a knack for reading the crowd, our DJs ensure an unforgettable experience, tailored to your unique vibe and style. Let the rhythm move you and the music take you on a journey with our professional DJ services.</p>
@@ -101,9 +101,9 @@ export default function PhotographyPage() {
 					</div>
 					<div className="flex fill-width flex-1 content content-gap m-flex-column" id="addons">
 						<div className="grid m-width-fill">
-							<GradientCard imgSrc="/images/photography-7.png" className="special first-item c3" title="Facepainting" />
-							<GradientCard imgSrc="/images/photography-9.png" className="special c3" title="Cotton Candy" />
-							<GradientCard imgSrc="/images/photography-8.png" className="special c4" title="Popcorn" />
+							<GradientCard imgSrc="/images/photography-7.png.jpeg" className="special first-item c3" title="Facepainting" />
+							<GradientCard imgSrc="/images/photography-9.png.jpeg" className="special c3" title="Cotton Candy" />
+							<GradientCard imgSrc="/images/photography-8.png.jpeg" className="special c4" title="Popcorn" />
 						</div>
 						<div className="flex column flex-1">
 							<h2>Party Add-Ons</h2>
@@ -117,7 +117,7 @@ export default function PhotographyPage() {
 						</div>
 					</div>
 					<div className="flex fill-width flex-1 content content-gap m-flex-column" id="drone">
-						<GradientCard imgSrc="/images/photography-10.png" className="custom-dj c5 m-width-fill" />
+						<GradientCard imgSrc="/images/photography-10.png.jpeg" className="custom-dj c5 m-width-fill" />
 						<div className="flex column flex-1">
 							<h2>Dream-like Angles</h2>
 							<p>We elevate memories and enhance celebrations with aerial perspectives: using drones for both videography and photography.</p>
@@ -129,7 +129,7 @@ export default function PhotographyPage() {
 						</div>
 					</div>
 					<div className="flex fill-width flex-1 content content-gap m-flex-column" id="printing">
-						<GradientCard imgSrc="/images/photography-11.png" className="print c5 m-width-fill" />
+						<GradientCard imgSrc="/images/photography-11.png.jpeg" className="print c5 m-width-fill" />
 						<div className="flex column flex-1">
 							<h2>Printing</h2>
 							<p>Transforming digital memories into tangible keepsakes, we offer an affordable and convient printing service.</p>

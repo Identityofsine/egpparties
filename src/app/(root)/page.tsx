@@ -25,10 +25,10 @@ export default function LandingPage() {
 						</div>
 					</div>
 					<Carousel className="m-margin-top-08 ">
-						<CarouselItem img="/images/c-1.png" />
-						<CarouselItem img="/images/c-2.png" style={{ objectPosition: '80% 0%' }} />
-						<CarouselItem img="/images/c-3.png" style={{ objectPosition: '80% 0%' }} />
-						<CarouselItem img="/images/c-4.png" />
+						<CarouselItem img="/images/c-1.png.jpeg" />
+						<CarouselItem img="/images/c-2.png.jpeg" style={{ objectPosition: '80% 0%' }} />
+						<CarouselItem img="/images/c-3.png.jpeg" style={{ objectPosition: '80% 0%' }} />
+						<CarouselItem img="/images/c-4.png.jpeg" />
 					</Carousel>
 				</div>
 			</section>
@@ -37,15 +37,15 @@ export default function LandingPage() {
 				<p className="text-left body-1 m-text-center">Our elite team of specialists masterfully immortalizes your moments with unparalleled skill and finesse, going the extra mile to ensure customer satisfaction</p>
 				<div className="grid client-box m-center-margin m-grid-center">
 					<div className="card-container">
-						<GradientCard className="expert" imgSrc="/images/c-1.png" title="100s of Clients" />
+						<GradientCard className="expert" imgSrc="/images/c-1.png.jpeg" title="100s of Clients" />
 						<p className="margin-top-02 m-margin-top-03">Trusted by Suffolk County Police and Bethpage Federal Credit Union, among many others!</p>
 					</div>
 					<div className="card-container">
-						<GradientCard className="expert" imgSrc="/images/c-2.png" title="1000s of Photos" style={{ objectPosition: '50% 15%' }} />
+						<GradientCard className="expert" imgSrc="/images/c-2.png.jpeg" title="1000s of Photos" style={{ objectPosition: '50% 15%' }} />
 						<p className="margin-top-02 m-margin-top-03">Countless Memories Perserved.</p>
 					</div>
 					<div className="card-container">
-						<GradientCard className="expert" imgSrc="/images/c-3.png" title="Hours of Video" style={{ objectPosition: '50% 15%' }} />
+						<GradientCard className="expert" imgSrc="/images/c-3.png.jpeg" title="Hours of Video" style={{ objectPosition: '50% 15%' }} />
 						<p className="margin-top-02 m-margin-top-03">Unlock the Power of Visual Storytelling With Our Expert Videography Services</p>
 					</div>
 				</div>
@@ -61,7 +61,7 @@ export default function LandingPage() {
 					</div>
 					<div className="photo-container flex column">
 						<h3>So,</h3>
-						<img src="/images/wd-1.png" alt="Photography" style={{ objectPosition: '50% 12%' }} />
+						<img src="/images/wd-1.png.jpeg" alt="Photography" style={{ objectPosition: '50% 12%' }} />
 						<h3>We’ll do the picture taking while you can focus on making memories.</h3>
 					</div>
 					<a href={brandSettings.path + "services/photography"}>
@@ -93,7 +93,7 @@ export default function LandingPage() {
 					</div>
 					<div className="photo-container flex column">
 						<h3>Then,</h3>
-						<img src="/images/wd-3.png" alt="Videography" style={{ objectPosition: '50% 25%' }} />
+						<img src="/images/wd-3.png.jpeg" alt="Videography" style={{ objectPosition: '50% 25%' }} />
 						<h3>We will be sure to hit record for you.</h3>
 					</div>
 				</div>
@@ -103,27 +103,27 @@ export default function LandingPage() {
 					<h2 className="fill-width" style={{ fontWeight: '500' }}>What We Do</h2>
 					<div className="events-grid margin-top-02">
 						<a href={brandSettings.path + 'services/photography#wedding'} className="event event-1">
-							<GradientCard className="fill-width fill-height" imgSrc="/images/wwd-1.png" title="Weddings" />
+							<GradientCard className="fill-width fill-height" imgSrc="/images/wwd-1.png.jpeg" title="Weddings" />
 						</a>
 						<a href={brandSettings.path + 'services/photography#pep'} className="event event-2">
-							<GradientCard className="fill-width fill-height" imgSrc="/images/wwd-2.png" title="Parties" />
+							<GradientCard className="fill-width fill-height" imgSrc="/images/wwd-2.png.jpeg" title="Parties" />
 						</a>
 						{/* Disable for grid presentation*/}
 						<a href={brandSettings.path + 'services/photography#pep'} className="event mobile-disable">
-							<GradientCard className="fill-width fill-height" imgSrc="/images/wwd-4.png" title="Sweet 16s" />
+							<GradientCard className="fill-width fill-height" imgSrc="/images/wwd-4.png.jpeg" title="Sweet 16s" />
 						</a>
 						<a href={brandSettings.path + 'services/photography#pep'} className="event event-4">
-							<GradientCard className="fill-width fill-height" imgSrc="/images/wwd-3.png" title="Events" />
+							<GradientCard className="fill-width fill-height" imgSrc="/images/wwd-3.png.jpeg" title="Events" />
 						</a>
 						<a href={brandSettings.path + 'services/photography#pep'} className="event event-3 mobile-enable">
-							<GradientCard className="fill-width fill-height" imgSrc="/images/wwd-4.png" title="Sweet 16s" />
+							<GradientCard className="fill-width fill-height" imgSrc="/images/wwd-4.png.jpeg" title="Sweet 16s" />
 						</a>
 						<div className="flex column fill-height event-flex ">
 							<a href={brandSettings.path + 'services/photography#family'} className="event event-5 fill-height">
-								<GradientCard className="event event-5 c3 fill-height" imgSrc="/images/wwd-5.png" title="Family" style={{ objectPosition: '50% 8%' }} />
+								<GradientCard className="event event-5 c3 fill-height" imgSrc="/images/wwd-5.png.jpeg" title="Family" style={{ objectPosition: '50% 8%' }} />
 							</a>
 							<a href={brandSettings.path + 'services/photography#pep'} className="event event-6 fill-height">
-								<GradientCard className="event event-5 c3 fill-height" imgSrc="/images/wwd-6.png" title="Personal" style={{ objectPosition: '50% 0%' }} />
+								<GradientCard className="event event-5 c3 fill-height" imgSrc="/images/wwd-6.png.jpeg" title="Personal" style={{ objectPosition: '50% 0%' }} />
 							</a>
 						</div>
 					</div>
