@@ -12,7 +12,7 @@ export default function LandingPage() {
 					<div className="margin-width flex column align-center gap-01">
 						<div className="flex column align-center title-block">
 							<h2 className="m-text-center text-center">Long Island's Best Party and Entertainment Company</h2>
-							<h3 className="m-text-center">We do it all - EGP is a one stop shop for all party events!</h3>
+							<h3 className="m-text-center text-center center-margin">We do it all - EGP is a one stop shop for all party events!</h3>
 						</div>
 						<p className="center-text">Whether It's a sweet 16, a wedding, a graduation, a family reunion, a bar mitzvah, a quinceanera, a communion, or any other special occasion - we will provide the service.</p>
 						<div className="flex row align-center gap-01 m-flex-column m-margin-top-08">
