@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import dynamic from "next/dynamic";
 import { NavBar } from "../components/Navbar";
 import brandSettings from "./brand.settings";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -37,6 +38,19 @@ export default function RootLayout({
 				{children}
 				<DynamicFooter />
 			</body>
+			<Script
+				async
+				src="https://www.googletagmanager.com/gtag/js?id=G-LYZ0Q6LZJN"
+			/>
+
+			<Script id="google-analytics">
+				{`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', G-LYZ0Q6LZJN);
+          `}
+			</Script>
 		</html>
 	);
 }
