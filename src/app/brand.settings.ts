@@ -6,6 +6,7 @@ const brandSettings = {
 	description: 'Key moments in our lives act as milestones, encapsulating cherished memories that define us.',
 	theme: 'light',
 	logo: '/icons/apature.svg',
+	url: 'https://egpparties.com',
 	landing: {
 		carouselSpeed: 12, //in seconds
 	},

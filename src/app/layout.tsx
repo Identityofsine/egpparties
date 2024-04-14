@@ -6,17 +6,11 @@ import dynamic from "next/dynamic";
 import { NavBar } from "../components/Navbar";
 import brandSettings from "./brand.settings";
 import Script from "next/script";
-
+import { MetaDataTemplate } from "./metadata_template";
 const inter = Inter({ subsets: ["latin"] });
 
 
-export const metadata: Metadata = {
-	title: brandSettings.name,
-	description: "Key moments in our lives act as milestones, encapsulating cherished memories that define us.",
-	twitter: {
-		title: brandSettings.name,
-	}
-};
+export const metadata: Metadata = { ...MetaDataTemplate };
 
 const DynamicNavbar = dynamic(() => import("../components/Navbar").then((module) => module.NavBar), {
 	loading: () => <p>Loading...</p>,
