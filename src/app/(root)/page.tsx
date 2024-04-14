@@ -8,8 +8,6 @@ import { MetaDataTemplate } from '@/app/metadata_template';
 
 export const metadata: Metadata = {
 	...MetaDataTemplate,
-	title: 'EGPParties - Long Island DJ | Photography | Videography',
-	description: 'Childrens parties | Weddings | Sweet 16 - EGP Parties is a Long Island based party and entertainment company. We specialize in DJ, Photography, and Videography services. We are a one stop shop for all party events!',
 }
 
 export default function LandingPage() {
