@@ -66,7 +66,6 @@ export default function LandingPage() {
 						<p className="margin-top-02">Important moments in our lives serve as markers of our journey, encapsulating memories we hold dear. They're fleeting, yet impactful, weaving the fabric of our identity. However, the task of capturing these moments can be a stressful  endeavor. Amidst the whirlwind of emotions and spontaneity, there's a  delicate balance between living in the moment and ensuring it's  preserved for posterity.</p>
 					</div>
 					<div className="photo-container flex column">
-						<h3>So,</h3>
 						<img src="/images/wd-1.png.jpeg" alt="Photography" style={{ objectPosition: '50% 12%' }} />
 						<h3>We’ll do the picture taking while you can focus on making memories.</h3>
 					</div>
@@ -83,7 +82,6 @@ export default function LandingPage() {
 						</p>
 					</div>
 					<div className="photo-container flex column">
-						<h3>So,</h3>
 						<img src="/images/wd-3.jpg" alt="Photography" style={{ objectPosition: '20% 38%' }} />
 						<h3>All you have to do is dance the night away while we spin the tunes!</h3>
 					</div>
@@ -98,7 +96,6 @@ export default function LandingPage() {
 						<p className="margin-top-02">From Basic Coverage to Cinematic Masterpieces and Aerial Perspectives with Drones. Let Us Transform Your Moments into Unforgettable Films.</p>
 					</div>
 					<div className="photo-container flex column">
-						<h3>Then,</h3>
 						<img src="/images/wd-3.png.jpeg" alt="Videography" style={{ objectPosition: '50% 25%' }} />
 						<h3>We will be sure to hit record for you.</h3>
 					</div>
