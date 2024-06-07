@@ -1,13 +1,19 @@
 import brandSettings from '@/app/brand.settings';
+import { MetaDataTemplate } from '@/app/metadata_template';
 import Button from '@/components/Button';
 import '@/styles/pages/about.scss';
+
+export const metadata = {
+	...MetaDataTemplate,
+	description: "EGP Parties, based in Long Island, specializes in DJ, photography, and videography for children's parties, weddings, and Sweet 16s. Your one-stop event shop"
+}
 
 export default function AboutPage() {
 	return (
 		<main className="about-page margin-width center-margin">
 			<section >
 				<div className="flex column title-block">
-					<h6>{brandSettings.name}</h6>
+					<h1 className="h6-match">{brandSettings.name}</h1>
 					<h3>Or {brandSettings.shortName}</h3>
 				</div>
 				<p className="margin-top-04">Key moments in our lives act as milestones, encapsulating cherished memories that define us.</p>
@@ -26,9 +32,9 @@ export default function AboutPage() {
 						</p>
 					</div>
 					<div className="flex column right gap-01">
-						<h2>Our DJing Service</h2>
+						<h2 className="h2-match">Our DJing Service</h2>
 						<p className="margin-top-01">
-							Welcome to EGP Entertainment, the premier DJ service on Long Island. With a proven track record of hosting hundreds of electrifying parties, weddings, corporate events, aswell as countless childrens parties, we’re known for delivering unforgettable experiences tailored for your preferences.
+							<a className="a-default" href="https://egpparties.com/">Welcome to EGP Entertainment</a>, the premier DJ service on Long Island. With a proven track record of hosting hundreds of electrifying parties, weddings, corporate events, aswell as countless childrens parties, we’re known for delivering unforgettable experiences tailored for your preferences.
 						</p>
 						<p className="">
 							Our team of expert DJs not only spin the hottest tracks but also offers MC services, ensuring seamless transitions and keeping the energy high throughout your event. Get Ready to elevate your celebration with EGP Entertainment - where music meets excellence.

@@ -17,7 +17,7 @@ export default function LandingPage() {
 				<div className="flex column align-center gap-01">
 					<div className="margin-width flex column align-center gap-01">
 						<div className="flex column align-center title-block">
-							<h2 className="m-text-center text-center">Long Island's Best Party and Entertainment Company</h2>
+							<h1 className="m-text-center text-center h2-match">Long Island's Best Party and Entertainment Company</h1>
 							<h3 className="m-text-center text-center center-margin">We do it all - EGP is a one stop shop for all party events!</h3>
 						</div>
 						<p className="center-text">Whether It's a sweet 16, a wedding, a graduation, a family reunion, a bar mitzvah, a quinceanera, a communion, or any other special occasion - we will provide the service.</p>
@@ -31,10 +31,10 @@ export default function LandingPage() {
 						</div>
 					</div>
 					<Carousel className="m-margin-top-08 ">
-						<CarouselItem img="/images/c-1.png.jpeg" />
-						<CarouselItem img="/images/c-2.png.jpeg" style={{ objectPosition: '80% 0%' }} />
-						<CarouselItem img="/images/c-3.png.jpeg" style={{ objectPosition: '80% 0%' }} />
-						<CarouselItem img="/images/c-4.png.jpeg" />
+						<CarouselItem img="/images/c-1.png.jpeg" alt="Weddings pictures" />
+						<CarouselItem img="/images/c-2.png.jpeg" alt="Weddings pictures" style={{ objectPosition: '80% 0%' }} />
+						<CarouselItem img="/images/c-3.png.jpeg" alt="Weddings pictures" style={{ objectPosition: '80% 0%' }} />
+						<CarouselItem img="/images/c-4.png.jpeg" alt="Weddings pictures" />
 					</Carousel>
 				</div>
 			</section>
@@ -66,7 +66,7 @@ export default function LandingPage() {
 						<p className="margin-top-02">Important moments in our lives serve as markers of our journey, encapsulating memories we hold dear. They're fleeting, yet impactful, weaving the fabric of our identity. However, the task of capturing these moments can be a stressful  endeavor. Amidst the whirlwind of emotions and spontaneity, there's a  delicate balance between living in the moment and ensuring it's  preserved for posterity.</p>
 					</div>
 					<div className="photo-container flex column">
-						<img src="/images/wd-1.png.jpeg" alt="Photography" style={{ objectPosition: '50% 12%' }} />
+						<img src="/images/wd-1.png.jpeg" alt="Our Photography Methods" style={{ objectPosition: '50% 12%' }} />
 						<h3>We’ll do the picture taking while you can focus on making memories.</h3>
 					</div>
 					<a href={brandSettings.path + "services/photography"}>
@@ -76,13 +76,13 @@ export default function LandingPage() {
 				<h3 className="center-text">&</h3>
 				<div className="flex column fill-width we-do-block we-do-block-2">
 					<div className="title-container">
-						<h1>Best DJ Services On Long Island</h1>
+						<h2 className="h1-match">Best DJ Services On Long Island</h2>
 						<p className="margin-top-02">
-							Our team of experienced DJs bring unparalleled expertise and energy to every event, ensuring a seamless flow of music tailored to your unique tastes and preferences. Whether it’s a wedding, sweet 16, or any other celebration, we understand the importance of creating the perfect atmosphere, and we work closely with you to customize every aspect of the music selection and performance. With a wealth of experience in a variety of events, trust us to make your special occasion.
+							<a className="a-default" href="/about#dj">Our team of experienced DJs</a> bring unparalleled expertise and energy to every event, ensuring a seamless flow of music tailored to your unique tastes and preferences. Whether it’s a wedding, sweet 16, or any other celebration, we understand the importance of creating the perfect atmosphere, and we work closely with you to customize every aspect of the music selection and performance. With a wealth of experience in a variety of events, trust us to make your special occasion.
 						</p>
 					</div>
 					<div className="photo-container flex column">
-						<img src="/images/wd-3.jpg" alt="Photography" style={{ objectPosition: '20% 38%' }} />
+						<img src="/images/wd-3.jpg" alt="Dj dance party at night" style={{ objectPosition: '20% 38%' }} />
 						<h3>All you have to do is dance the night away while we spin the tunes!</h3>
 					</div>
 					<a href="/about#dj">
@@ -92,11 +92,11 @@ export default function LandingPage() {
 				<h3 className="center-text">&</h3>
 				<div className="flex column fill-width we-do-block we-do-block-2">
 					<div className="title-container">
-						<h1>We Do Videography</h1>
+						<h2 className="h1-match">We Do Videography</h2>
 						<p className="margin-top-02">From Basic Coverage to Cinematic Masterpieces and Aerial Perspectives with Drones. Let Us Transform Your Moments into Unforgettable Films.</p>
 					</div>
 					<div className="photo-container flex column">
-						<img src="/images/wd-3.png.jpeg" alt="Videography" style={{ objectPosition: '50% 25%' }} />
+						<img src="/images/wd-3.png.jpeg" alt="Expert Videography Services" style={{ objectPosition: '50% 25%' }} />
 						<h3>We will be sure to hit record for you.</h3>
 					</div>
 				</div>

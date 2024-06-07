@@ -5,7 +5,7 @@ import '@/styles/pages/services.scss'
 export default function ServicesPage() {
 	return (
 		<main className="services margin-width center-margin">
-			<h2>Our Services</h2>
+			<h1 className="h2-match">Our Services</h1>
 			<section className="grid-container ">
 				<a href={brandSettings.path + 'services/photography'} className="grid-item-1">
 					<GradientCard className="fill-width fill-height" imgSrc="/images/services-1.png.jpeg" title="Photography" />

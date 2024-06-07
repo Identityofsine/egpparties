@@ -20,7 +20,7 @@ export default function MobileNavBar() {
 	return (
 		<Fragment>
 			<div className={`hamburger mobile-enable fit-height ${open ? "open" : ""}`} onClick={() => setOpen(!open)} >
-				<img src="/icons/hamburger.svg" alt="" />
+				<img src="/icons/hamburger.svg" alt="hamburger" />
 			</div>
 			<div className={`mobile-nav m-gap-04 ${open ? "open" : ""} `}>
 				<Logo className="logo-nav" />

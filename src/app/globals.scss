@@ -2,99 +2,110 @@
 @import './scss_lib/breakpoints.scss';
 
 :root {
-	--max-width: 1920px;
-	--margin-width: calc(var(--max-width) - 1.7867rem);
-	--border-radius: 12px;
-	--border-color: #E1E1E1;
-	--card-border-radius: 20px;
-	--card-linear-gradient-1: linear-gradient(180deg,
-			rgba(0, 0, 0, 0.23) 15.06%,
-			rgba(0, 0, 0, 0) 34.48%,
-			rgba(0, 0, 0, 0) 60.77%,
-			rgba(0, 0, 0, 0.81) 85.54%);
-	--card-linear-gradient-2: linear-gradient(180deg,
-			rgba(0, 0, 0, 0.23) 15.06%,
-			rgba(0, 0, 0, 0) 34.48%,
-			rgba(0, 0, 0, 0) 75.77%,
-			rgba(0, 0, 0, 0.81) 85.54%);
-	--card-linear-gradient-3: linear-gradient(180deg,
-			rgba(0, 0, 0, 0.23) 15.06%,
-			rgba(0, 0, 0, 0) 34.48%,
-			rgba(0, 0, 0, 0) 52.77%,
-			rgba(0, 0, 0, 0.81) 85.54%);
-	--card-linear-gradient-4: linear-gradient(180deg,
-			rgba(0, 0, 0, 0.23) 15.06%,
-			rgba(0, 0, 0, 0) 34.48%,
-			rgba(0, 0, 0, 0) 45.77%,
-			rgba(0, 0, 0, 0.81) 85.54%);
-	--card-linear-gradient-5: linear-gradient(180deg,
-			rgba(0, 0, 0, 0.23) 15.06%,
-			rgba(0, 0, 0, 0) 34.48%,
-			rgba(0, 0, 0, 0) 80%,
-			rgba(0, 0, 0, 0.81) 100.54%);
-	--font-mono: "Inter", monospace;
-	--button-primary: #191716;
-	--white-filter: invert(83%) sepia(99%) saturate(2%) hue-rotate(43deg) brightness(108%) contrast(100%);
-	font-size: 75px;
+  --max-width: 1920px;
+  --margin-width: calc(var(--max-width) - 1.7867rem);
+  --border-radius: 12px;
+  --border-color: #E1E1E1;
+  --card-border-radius: 20px;
+  --card-linear-gradient-1: linear-gradient(180deg,
+      rgba(0, 0, 0, 0.23) 15.06%,
+      rgba(0, 0, 0, 0) 34.48%,
+      rgba(0, 0, 0, 0) 60.77%,
+      rgba(0, 0, 0, 0.81) 85.54%);
+  --card-linear-gradient-2: linear-gradient(180deg,
+      rgba(0, 0, 0, 0.23) 15.06%,
+      rgba(0, 0, 0, 0) 34.48%,
+      rgba(0, 0, 0, 0) 75.77%,
+      rgba(0, 0, 0, 0.81) 85.54%);
+  --card-linear-gradient-3: linear-gradient(180deg,
+      rgba(0, 0, 0, 0.23) 15.06%,
+      rgba(0, 0, 0, 0) 34.48%,
+      rgba(0, 0, 0, 0) 52.77%,
+      rgba(0, 0, 0, 0.81) 85.54%);
+  --card-linear-gradient-4: linear-gradient(180deg,
+      rgba(0, 0, 0, 0.23) 15.06%,
+      rgba(0, 0, 0, 0) 34.48%,
+      rgba(0, 0, 0, 0) 45.77%,
+      rgba(0, 0, 0, 0.81) 85.54%);
+  --card-linear-gradient-5: linear-gradient(180deg,
+      rgba(0, 0, 0, 0.23) 15.06%,
+      rgba(0, 0, 0, 0) 34.48%,
+      rgba(0, 0, 0, 0) 80%,
+      rgba(0, 0, 0, 0.81) 100.54%);
+  --font-mono: "Inter", monospace;
+  --button-primary: #191716;
+  --a-blue: #4f7cac;
+  --a-purple: #574ae2;
+  --white-filter: invert(83%) sepia(99%) saturate(2%) hue-rotate(43deg) brightness(108%) contrast(100%);
+  font-size: 75px;
 
-	@include media('>=LGdesktop') {
-		font-size: 75px;
-	}
+  @include media('>=LGdesktop') {
+    font-size: 75px;
+  }
 
-	@include media('<=LGdesktop') {
-		font-size: 70px;
-		--max-width: 100vw;
-	}
+  @include media('<=LGdesktop') {
+    font-size: 70px;
+    --max-width: 100vw;
+  }
 
-	@include media('<=MDdesktop') {
-		font-size: 62.5px;
-	}
+  @include media('<=MDdesktop') {
+    font-size: 62.5px;
+  }
 
-	@include media('<=desktop') {
-		font-size: 56.25px;
-	}
+  @include media('<=desktop') {
+    font-size: 56.25px;
+  }
 
-	@include media('<=LGlaptop') {
-		font-size: 50px;
-	}
+  @include media('<=LGlaptop') {
+    font-size: 50px;
+  }
 
-	@include media('<=laptop') {
-		font-size: 40px;
-	}
+  @include media('<=laptop') {
+    font-size: 40px;
+  }
 
-	@include media('<=LGtablet') {
-		font-size: 35.6px;
-	}
+  @include media('<=LGtablet') {
+    font-size: 35.6px;
+  }
 
-	@include media('<=LGphone') {
-		font-size: 37px;
-		--margin-width: calc(var(--max-width) - 1.5867rem);
-		--max-width: 99vw;
-	}
+  @include media('<=LGphone') {
+    font-size: 37px;
+    --margin-width: calc(var(--max-width) - 1.5867rem);
+    --max-width: 99vw;
+  }
 }
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img {
-	object-fit: cover;
+  object-fit: cover;
 }
 
 main {
-	max-width: var(--max-width);
-	margin: 0 auto;
-	margin-top: 1.4400rem;
-	padding-bottom: 1.9200rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  margin-top: 1.4400rem;
+  padding-bottom: 1.9200rem;
 }
 
 a {
-	text-decoration: none;
-	color: inherit;
+  text-decoration: none;
+  color: inherit;
+
+  &.a-default {
+    color: var(--a-blue);
+    text-decoration: underline;
+
+    &:visited {
+      color: var(--a-blue);
+    }
+  }
 }
 
 h1,
@@ -105,97 +116,104 @@ h5,
 h6,
 h7,
 p {
-	margin: 0;
+  margin: 0;
 }
 
 body {
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
 a {
-	text-decoration: none;
-	color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 //title-3
-h1 {
-	font-size: 2.0667rem;
-	font-weight: 300;
+h1,
+.h1-match {
+  font-size: 2.0667rem;
+  font-weight: 300;
 }
 
 //title-2
-h2 {
-	font-size: 1rem;
+h2,
+.h2-match {
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 //sub-title
 h3 {
-	font-size: 0.7333rem;
-	font-weight: 400;
+  font-size: 0.7333rem;
+  font-weight: 400;
 }
 
 //title-4
 h4 {
-	font-size: 1.4000rem;
-	font-weight: 300;
+  font-size: 1.4000rem;
+  font-weight: 300;
 }
 
 //card-font-1
 h5 {
-	font-size: 0.8533rem;
-	font-weight: 500;
-	color: white;
+  font-size: 0.8533rem;
+  font-weight: 500;
+  color: white;
 }
 
 //title-5
-h6 {
-	font-weight: 300;
-	font-size: 1.6800rem;
-	line-height: 127%;
+h6,
+.h6-match {
+  font-weight: 300;
+  font-size: 1.6800rem;
+  line-height: 127%;
 }
 
 p {
-	font-size: 0.3067rem;
-	line-height: 197%;
-	color: rgba(16, 16, 16, 0.8);
+  font-size: 0.3067rem;
+  line-height: 197%;
+  color: rgba(16, 16, 16, 0.8);
 }
 
 @include onMobile() {
 
-	//title-3
-	h1 {
-		font-size: 1.45rem;
-	}
+  //title-3
+  h1,
+  .h1-match {
+    font-size: 1.45rem;
+  }
 
-	//title-2
-	h2 {
-		font-size: 1rem;
-	}
+  //title-2
+  h2,
+  .h2-match {
+    font-size: 1rem;
+  }
 
-	//sub-title
-	h3 {
-		font-size: 0.8649rem;
-	}
+  //sub-title
+  h3 {
+    font-size: 0.8649rem;
+  }
 
-	//title-4
-	h4 {
-		font-size: 1.2162rem;
-	}
+  //title-4
+  h4 {
+    font-size: 1.2162rem;
+  }
 
-	//card-font-1
-	h5 {
-		font-size: 1.0541rem;
-	}
+  //card-font-1
+  h5 {
+    font-size: 1.0541rem;
+  }
 
-	//title-5
-	h6 {
-		font-weight: 300;
-		font-size: 1.2432rem;
-		line-height: 127%;
-	}
+  //title-5
+  h6,
+  .h6-match {
+    font-weight: 300;
+    font-size: 1.2432rem;
+    line-height: 127%;
+  }
 
-	p {
-		font-size: 0.3243rem;
-		line-height: 197%;
-	}
+  p {
+    font-size: 0.3243rem;
+    line-height: 197%;
+  }
 }

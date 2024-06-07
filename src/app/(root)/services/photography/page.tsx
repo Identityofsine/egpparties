@@ -2,6 +2,12 @@ import brandSettings from '@/app/brand.settings';
 import Button from '@/components/Button';
 import { GradientCard } from '@/components/GradientCard';
 import '@/styles/pages/photography.scss';
+import { MetaDataTemplate } from '@/app/metadata_template';
+
+export const metadata = {
+	...MetaDataTemplate,
+	description: "EGP Parties, based in Long Island, specializes in DJ, photography, and videography services for children's parties, weddings, and Sweet 16s. Your one-stop event shop!"
+}
 
 export default function PhotographyPage() {
 	return (
@@ -88,7 +94,7 @@ export default function PhotographyPage() {
 						<GradientCard imgSrc="/images/photography-6.png.jpeg" className="custom-dj c5 m-width-fill" />
 						<div className="flex column flex-1">
 							<h2>DJ</h2>
-							<p>With a passion for music and a knack for reading the crowd, our DJs ensure an unforgettable experience, tailored to your unique vibe and style. Let the rhythm move you and the music take you on a journey with our professional DJ services.</p>
+							<p>With a passion for music and a knack for reading the crowd, our DJs ensure an unforgettable experience, tailored to your unique vibe and style. Let the rhythm move you and the music take you on a journey with <a className="a-default" href="https://egpparties.com/about#dj">our professional DJ services.</a></p>
 							<div className="flex column gap-01 margin-top-06">
 								<a href={brandSettings.path + "about#dj"}>
 									<Button className="m-width-fill" text="Learn About Our DJ Process" primary={false} />
